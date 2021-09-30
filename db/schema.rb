@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_29_193943) do
+ActiveRecord::Schema.define(version: 2021_09_30_223518) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(version: 2021_09_29_193943) do
     t.string "name"
     t.string "last_name"
     t.string "mothers_last_name"
+    t.string "cellphone_number"
+    t.string "profile_picture"
+    t.string "photo_id"
+    t.text "about"
+    t.string "rfc"
+    t.string "credit_card"
+    t.string "debit_card"
+    t.text "drop_off_location"
+    t.date "birthday"
+    t.string "google_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
