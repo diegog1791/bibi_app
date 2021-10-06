@@ -5,6 +5,7 @@ ruby '2.7.1'
 
 ##### Gems added for bibi-app #####
 gem 'devise'
+gem 'pundit'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.1'

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <%= simple_form_for(product) do |f| %>
+        <%= f.input :title,
+                    label: 'Titulo del producto' %>
+        <%= f.input :description,
+                    label: 'Descripción del producto' %>
+        <%= f.input :daily_price,
+                    label: 'Precio por dia' %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<br>

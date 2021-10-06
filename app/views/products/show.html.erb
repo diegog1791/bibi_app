@@ -1,0 +1,16 @@
+<h2>
+  <%= @product.title %>
+</h2>
+<p>
+  <%= @product.description %>
+</p>
+<p>
+  <%= @product.daily_price %>
+</p>
+
+<%= link_to 'Regresar', products_path %>
+
+<%# <#%= link_to "Delete #{@product.title}", %>
+            <%# product_path(@product),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %> 

@@ -17,8 +17,5 @@ Rails.application.routes.draw do
   get 'dashboard' => 'profile#dashboard'
 
   # product routes
-  # resources :products
-
-  # categories routes
-  # resources :categories
+  resources :products
 end
