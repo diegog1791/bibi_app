@@ -33,8 +33,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'autoprefixer-rails', '10.2.5'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 group :development, :test do
   gem 'pry-byebug'

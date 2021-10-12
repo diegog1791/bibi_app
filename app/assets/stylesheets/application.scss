@@ -4,6 +4,9 @@
 @import "bootstrap/scss/bootstrap";
 @import "components/index";
 @import "pages/index";
+@import "font-awesome";
+@import "font-awesome-sprockets";
+
 //BODY-FONTS-COLORS DESIGN 
 body {
   background-color: #EFEFEF;
@@ -32,18 +35,42 @@ h3 {
   color: black;
 }
 
+h3 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
 p {
-  font-family: "Montserrat";
-  font-size: 18px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    margin: 0;
 }
 
 a {
-  font-family: "Montserrat";
-  color: black;
-  padding-left: 10px;
+    color: black;
 }
 
 a:hover {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
+
+//EMOJIS GENERAL DESIGN
+.fa-bolt {
+    color: #ED3660;
+    margin-right: 5px;
+}
+
+.fa-star {
+    color: #FFEF00;
+}
+
