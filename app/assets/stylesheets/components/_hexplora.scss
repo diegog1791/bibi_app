@@ -1,0 +1,146 @@
+.explora {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.exp-categ {
+  width: 50%;
+  height: 900px;
+  justify-content: center;
+}
+
+.exp-even {
+  width: 50%;
+  height: 900px;
+  justify-content: center;
+}
+
+.explora-info {
+  background-color: white;
+  color: black;
+  opacity: 60%;
+  font-size: 30px;
+}
+
+.depart {
+  justify-content: center;
+  width: 300px;
+  padding: 5px;
+  height: fit-content;
+  background: #FFF562;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 0;
+}
+
+///////////////////////////explora
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+}
+
+.boton1 {
+  position: absolute;
+  top: 48%;
+  left: 10%;
+}
+
+.boton2 {
+  position: absolute;
+  top: 48%;
+  right: 10%;
+}
+
+.layer .content-body {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.bottom {
+  background-image: url(https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_1056,w_1500/v1632461548/bibi/HOME/evento1_fdqiug.jpg);
+  z-index: 1;
+}
+
+.bottom .content-body {
+  right: 5%;
+}
+
+.bottom h1 {
+  color: #FFF562;
+}
+
+.top {
+  background-image: url(https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_1056,w_1500/v1632459034/bibi/HOME/categoria_hqif4m.jpg);
+  color: #222;
+  z-index: 2;
+  width: 50vw;
+}
+
+.top .content-body {
+  left: 5%;
+  color: #FFF562;
+  border-radius: 10px;
+  padding: 15px
+}
+
+.top h1 {
+  color: white;
+}
+
+.extxinf {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #FFF562;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+}
+
+.skewed .handle {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 200%;
+  transform-origin: top;
+}
+
+.skewed .top {
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+  margin-left: 1000px;
+}
+
+@media(max-width:768px) {
+  body {
+    font-size: 75%;
+  }
+}

@@ -6,17 +6,33 @@
 @import "pages/index";
 @import "font-awesome";
 @import "font-awesome-sprockets";
+
+//BODY-FONTS-COLORS DESIGN 
+body {
+  background-color: #EFEFEF;
+}
+
 h1 {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 50px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 50px;
+  color: black;
 }
 
 h2 {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 32px;
-    margin: 0;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  color: black;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0;
+  color: black;
 }
 
 h3 {
@@ -57,3 +73,4 @@ a:hover {
 .fa-star {
     color: #FFEF00;
 }
+

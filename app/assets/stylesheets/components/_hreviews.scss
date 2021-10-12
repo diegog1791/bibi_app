@@ -1,0 +1,51 @@
+.h-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 500px;
+  margin: 0 40px 80px 40px;
+}
+
+.r-card {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 10px;
+  width: 45%;
+  height: 215px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.u-img {
+  width: 40%;
+  height: 100%;
+  border-radius: 25px;
+  background-image: url(https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_175,w_225/v1623356806/pedro_c4byyx.jpg);
+}
+
+.u-rev {
+  padding: 20px;
+  text-align: center;
+}
+
+.fas {
+  color: yellow;
+}
+
+.u-name {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.us-n {
+  color: black;
+  margin: 0;          
+}
+
+.us-c {
+  color: black;
+  margin: 0;
+}
