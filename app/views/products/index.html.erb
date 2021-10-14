@@ -66,9 +66,8 @@
 
 <div class="indprodcarcon"> <%#Index Products Card Container%>
 
-  <div class="indcardprod"> <%#Index Cards Products%>
-  
   <% @products.each do |product| %>
+<div class="indcardprod"> <%#Index Cards Products%>
   <a href="">
      <%#Top Image Products%>
       <img class="timgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_230,w_280/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
@@ -100,24 +99,10 @@
     </a>
   </div>
   <% end %>
+  
 
 </div>
-
-
-
-
-
-
-
-
 <table>
-  <thead>
-    <tr>
-      <th>Nombre del producto</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @products.each do |product| %>
       <tr>
