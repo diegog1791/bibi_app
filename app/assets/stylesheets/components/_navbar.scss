@@ -1,44 +1,59 @@
-.navbar {
-  display: flex;
-  flex-direction: row;
-}
-
-.logsba {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.sback {
-  display: flex;
-  background-color: #fefefe;
-  border-radius: 25px;
-  width: max-content;
-  height: max-content;
-  margin-left: 30px;
-}
-
-.form-control {
-  background-color: #fefefe;
-  border-radius: 25px;
-  border: transparent;
-  width: 500px;
-}
-
-.sbtn {
-  width: max-content;
-  background-color: transparent;
-  border: transparent;
-  color: black;
-  padding: 0 10px 0 5px;
-}
-
-.fas .fas-bars {
-  color: black;
-}
-
-.mtogb {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-}
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+    
+    .logsba {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .hlogobtn {
+        width: max-content;
+        height: max-content;
+    }
+    
+    .sback {
+        display: flex;
+        background-color: #fefefe;
+        border-radius: 25px;
+        width: min-content;
+        height: max-content;
+        margin-left: 30px;
+    }
+    
+    .form-control {
+        background-color: #fefefe;
+        border-radius: 25px;
+        border: transparent;
+        width: 500px;
+    }
+    
+    .sbtn {
+        width: max-content;
+        background-color: transparent;
+        border: transparent;
+        color: black;
+        padding: 0 10px 0 5px;
+    }
+    
+    .fas .fa-search {
+        color: black;
+    }
+    
+    .mtog {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    
+    //Medium devices Desktops (≥992px)
+    @media screen and (max-width: 992px) {}
+    
+    //Small devices Tablets (≥768px)
+    @media screen and (max-width: 768px) {}
