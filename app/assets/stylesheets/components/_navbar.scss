@@ -1,59 +1,112 @@
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-    }
-    
-    .logsba {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .hlogobtn {
-        width: max-content;
-        height: max-content;
-    }
-    
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.logsba {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.hlogobtn {
+    width: max-content;
+    height: max-content;
+}
+
+.sback {
+    display: flex;
+    background-color: #fefefe;
+    border-radius: 25px;
+    width: 800px;
+    height: max-content;
+    margin-left: 30px;
+    flex-grow: 1;
+}
+
+.form-control {
+    background-color: #fefefe;
+    border-radius: 25px;
+    border: transparent;
+    width: 100%;
+}
+
+.sbtn {
+    width: max-content;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    padding: 0 10px 0 5px;
+}
+
+.fas .fa-search {
+    color: black;
+}
+
+.mtog {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-left: 30px;
+    flex-grow: 2;
+}
+
+//Medium devices Desktops (≥992px)
+@media screen and (max-width: 992px) {
     .sback {
         display: flex;
         background-color: #fefefe;
         border-radius: 25px;
-        width: min-content;
+        width: 500px;
         height: max-content;
         margin-left: 30px;
     }
-    
     .form-control {
         background-color: #fefefe;
         border-radius: 25px;
         border: transparent;
-        width: 500px;
+        width: 100%;
     }
-    
-    .sbtn {
-        width: max-content;
-        background-color: transparent;
-        border: transparent;
-        color: black;
-        padding: 0 10px 0 5px;
-    }
-    
-    .fas .fa-search {
-        color: black;
-    }
-    
-    .mtog {
+}
+
+//Small devices Tablets (≥768px)
+@media screen and (max-width: 768px) {
+    .sback {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding-right: 20px;
+        background-color: #fefefe;
+        border-radius: 25px;
+        width: 300px;
+        height: max-content;
+        margin-left: 30px;
     }
-    
-    //Medium devices Desktops (≥992px)
-    @media screen and (max-width: 992px) {}
-    
-    //Small devices Tablets (≥768px)
-    @media screen and (max-width: 768px) {}
+    .form-control {
+        background-color: #fefefe;
+        border-radius: 25px;
+        border: transparent;
+        width: 100%;
+    }
+}
+
+//Small devices Tablets (≥768px)
+@media screen and (max-width: 640px) {
+    .sback {
+        display: flex;
+        background-color: #fefefe;
+        border-radius: 25px;
+        width: max-content;
+        height: max-content;
+        margin-left: 30px;
+    }
+    .form-control {
+        background-color: #fefefe;
+        border-radius: 25px;
+        border: transparent;
+        width: 100%;
+    }
+}

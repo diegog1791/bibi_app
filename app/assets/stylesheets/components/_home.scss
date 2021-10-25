@@ -13,3 +13,27 @@
     margin-top: 50px;
     height: 100px;
 }
+
+.infodesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desctit {
+    justify-content: center;
+}
+
+.descimg {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: 500px;
+}
+
+.descste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
