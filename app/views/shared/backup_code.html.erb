@@ -18,3 +18,11 @@
 <% if policy(Product).new? %>
   <%= link_to 'Agregar un nuevo producto', new_product_path %>
 <% end %>
+
+
+
+# Adding a select field to simple form
+                            
+    <%= f.input :description, as: :select, 
+                    collection: @categories, 
+                    prompt: 'Select Fund', label: 'Require deposito' %>                            

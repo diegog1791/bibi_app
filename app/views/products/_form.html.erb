@@ -8,7 +8,16 @@
                     label: 'Descripción del producto' %>
         <%= f.input :daily_price,
                     label: 'Precio por dia' %>
-        <%= f.submit %>
+        <%= f.input :weekly_price,
+                    label: 'Precio por semana' %>
+        <%= f.input :monthly_price,
+                    label: 'Precio por mes' %>
+        <%= f.input :description,
+                    label: "Categoría", 
+                    collection: ["drones", "cameras"] %>                 
+                            
+        <br>
+        <%= f.submit 'Agregar producto' %>
       <% end %>
     </div>
   </div>
