@@ -38,9 +38,9 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
 
-  def categories
-    @categories = %w[drones, cameras]
-  end
+  # def categories
+  #   @categories = %w[drones, cameras]
+  # end
 
   private
 
