@@ -102,25 +102,6 @@
   
 
 </div>
-<table>
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.title %></td>
-        <td><%= link_to 'Ver producto', product %></td>
-        <% if policy(product).edit? %>
-          <td><%= link_to 'Editar producto', edit_product_path(product) %></td>
-        <% end %>  
-        <% if policy(product).destroy? %>
-          <td><%= link_to 'Eliminar producto', product, method: :delete, data: { confirm: '¿Esta usted seguro de eliminar este producto?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<% if policy(Product).new? %>
-  <%= link_to 'Agregar un nuevo producto', new_product_path %>
-<% end %>
 
 
