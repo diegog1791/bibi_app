@@ -12,9 +12,9 @@
                     label: 'Precio por semana' %>
         <%= f.input :monthly_price,
                     label: 'Precio por mes' %>
-        <%= f.input :description,
+        <%= f.input :category,
                     label: "Categoría", 
-                    collection: ["drones", "cameras"] %>                 
+                    collection: %w{Drones Electrodomésticos Inflables Cámaras Construcción Mobiliario Ropa Transporte} %>                 
                             
         <br>
         <%= f.submit 'Agregar producto' %>
