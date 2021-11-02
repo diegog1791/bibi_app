@@ -7,7 +7,9 @@ class ProductsController < ApplicationController
     @products = policy_scope(Product).order(created_at: :desc)
   end
 
-  def show; end
+  def show
+    # @product = Product.find(params[:id])
+  end
 
   def new
     @product = Product.new
@@ -37,10 +39,6 @@ class ProductsController < ApplicationController
 
     redirect_to products_path
   end
-
-  # def categories
-  #   @categories = %w[drones, cameras]
-  # end
 
   private
 

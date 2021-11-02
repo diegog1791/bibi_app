@@ -73,7 +73,9 @@
       <img class="timgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_230,w_280/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
    
     <div class="ctitprod"> <%#Card Title Products%>
-      <p class="cptfon"><%= product.title %></p> <%#Card Product Title Font%>
+      <p class="cptfon">
+      <%= link_to "#{product.title}", product_path(product) %>
+      </p> <%#Card Product Title Font%>
     </div>
     <div class="cowninf"> <%#Card Info Owner%>
       <div class="cinfprod"> <%#Card Info Product%>
@@ -81,7 +83,7 @@
           <i class="fas fa-bolt fa-sm"></i>
         </div>
         <div class="cownam"> <%#Card Owner Name%>
-          Diego G.
+          <p> <%= "#{product.user.name} #{product.user.last_name.first}." %> </p>
         </div>
       </div>
       <div class="cprostarev">
@@ -94,7 +96,9 @@
       </div>
     </div>
       <div class="cpropri"><%#Card products Price%>
-        <p class="cprifon">$1000</p><br><p class="cprifon">/día</p> <%#Card Price Font%>
+        <p class="cprifon">
+          <%= "$ #{product.daily_price}" %>
+        </p><br><p class="cprifon">/día</p> <%#Card Price Font%>
       </div>
     </a>
   </div>
