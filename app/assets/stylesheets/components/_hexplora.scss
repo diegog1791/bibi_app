@@ -1,146 +1,42 @@
-.explora {
+//Desktops
+.explorar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.exp-categ {
-    width: 50%;
-    height: 900px;
-    justify-content: center;
-}
-
-.exp-even {
-    width: 50%;
-    height: 900px;
-    justify-content: center;
-}
-
-.explora-info {
-    background-color: white;
-    color: black;
-    opacity: 60%;
-    font-size: 30px;
-}
-
-.depart {
-    justify-content: center;
-    width: 300px;
-    padding: 5px;
-    height: fit-content;
-    background: #FFF562;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    border: 0;
-}
-
-///////////////////////////explora
-#wrapper {
-    position: relative;
+    flex-wrap: wrap;
     width: 100%;
-    height: 900px;
-    overflow: hidden;
-}
-
-.layer {
-    position: absolute;
-    width: 100vw;
-    height: 900px;
-    overflow: hidden;
-}
-
-.layer .content-wrap {
-    position: absolute;
-    width: 100vw;
-    height: 900px;
-}
-
-.boton1 {
-    position: absolute;
-    top: 48%;
-    left: 10%;
-}
-
-.boton2 {
-    position: absolute;
-    top: 48%;
-    right: 10%;
-}
-
-.layer .content-body {
-    width: 25%;
-    position: absolute;
-    top: 50%;
+    min-height: min-content;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    transform: translateY(-50%);
-    color: black;
+    margin: auto;
 }
 
-.bottom {
+.concat {
+    width: 50%;
+    height: 80vh;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF562;
+}
+
+.coneve {
+    width: 50%;
+    height: 80vh;
+    padding: 20px;
+    align-items: center;
     background-color: white;
-    z-index: 1;
 }
 
-.bottom .content-body {
-    right: 5%;
-}
+.cateveinf {
+    margin-bottom: 30px;
+} //Medium devices Tablets/Desktops (≥992px)
+@media screen and (min-width: 992px) {}
 
-.bottom h1 {
-    color: #FFF562;
-}
+//Medium devices Tablets (≥768px)
+@media screen and (max-width: 768px) {}
 
-.top {
-    background-color: #FFF562;
-    color: #222;
-    z-index: 2;
-    width: 50vw;
-}
+//Small devices Mobiles (≥640px)
+@media screen and (max-width: 640px) {}
 
-.top .content-body {
-    left: 5%;
-    color: black;
-    border-radius: 10px;
-    padding: 15px
-}
-
-.top h1 {
-    color: black;
-}
-
-.extxinf {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.handle {
-    position: absolute;
-    height: 100%;
-    display: block;
-    background-color: #FFF562;
-    width: 5px;
-    top: 0;
-    left: 50%;
-    z-index: 3;
-}
-
-.skewed .handle {
-    top: 50%;
-    transform: translateY(-50%);
-    height: 200%;
-    transform-origin: top;
-}
-
-.skewed .top {
-    margin-left: -1000px;
-    width: calc(50vw + 1000px);
-}
-
-.skewed .top .content-wrap {
-    margin-left: 1000px;
-}
-
-@media(max-width:768px) {
-    body {
-        font-size: 75%;
-    }
-}
+//Extra Small devices Mobiles (≥480px)
+@media screen and (max-width: 480px) {}
