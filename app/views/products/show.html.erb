@@ -1,16 +1,27 @@
-<h2>
-  <%= @product.title %>
-</h2>
-<p>
-  <%= @product.description %>
-</p>
-<p>
-  <%= @product.daily_price %>
-</p>
+<div class="container">
+  <h2> <%= @product.title %> </h2>
+  <%# foto del producto %>
+  <p>Información del producto:</p>
+  <p> <%= @product.description %> </p>
+  
+  <br>
+  <h3>Precios</h3>
+  <h4>Diario</h4>
+  <p> <%= "$ #{@product.daily_price}" %> </p>
+  <h4>Semanal (7 días)</h4>
+  <p> <%= "$ #{@product.weekly_price}" %> </p>
+  <h4>Mensual (30 días)</h4>
+  <p> <%= "$ #{@product.monthly_price}" %> </p>
 
-<%= link_to 'Regresar', products_path %>
+  <br>
+  <h4>Calificación</h4>
+  <p>4.5</p>
 
-<%# <#%= link_to "Delete #{@product.title}", %>
-            <%# product_path(@product),
-            method: :delete,
-            data: { confirm: "Are you sure?" } %> 
+  <br>
+  <h4>Rentado</h4>
+  <p>12 veces</p>
+
+  <br>
+  <hr>
+  <%= link_to 'Regresar', products_path %>
+</div>
