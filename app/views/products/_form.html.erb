@@ -3,23 +3,32 @@
     <div class="col-4">
       <%= simple_form_for(product) do |f| %>
         <%= f.input :title,
-                    label: 'Titulo del producto' %>
+                    label: 'Titulo del producto',
+                    required: true %>
         <%= f.input :description,
-                    label: 'Descripción del producto' %>
+                    label: 'Descripción del producto',
+                    required: true %>
         <%= f.input :daily_price,
-                    label: 'Precio por dia' %>
+                    label: 'Precio por dia',
+                    required: true
+                     %>
         <%= f.input :weekly_price,
-                    label: 'Precio por semana' 
+                    label: 'Precio por semana',
+                    required: true 
                     %>
         <%= f.input :monthly_price,
-                    label: 'Precio por mes' %>
+                    label: 'Precio por mes',
+                    required: true %>
         <%= f.input :product_value,
-                    label: 'Valor del producto' %>
+                    label: 'Valor del producto',
+                    required: true %>
         <%= f.input :zip_code,
-                    label: 'Código postal' %>
+                    label: 'Código postal',
+                    required: true %>
         <%= f.input :category,
                     label: "Categoría", 
-                    collection: %w{Drones Electrodomésticos Inflables Cámaras Construcción Mobiliario Ropa Transporte} %>               
+                    collection: %w{Drones Electrodomésticos Inflables Cámaras Construcción Mobiliario Ropa Transporte},
+                    required: true %>               
                             
         <br>
         <%= f.submit 'Agregar producto' %>
