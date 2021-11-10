@@ -2,7 +2,7 @@
         display: flex;
         flex-wrap: wrap;
         height: fit-content;
-        margin: 0 40px 80px 40px;
+        width: 100%;
         justify-content: center;
     }
     
@@ -48,7 +48,7 @@
     .u-name {
         justify-content: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     .us-n {
@@ -58,11 +58,16 @@
     
     .us-c {
         color: rgb(209, 209, 209);
-        margin-left: 10px;
     }
     
     //Medium devices Desktops (≥992px)
     @media screen and (max-width: 992px) {
+        .h-reviews {
+            display: flex;
+            flex-wrap: wrap;
+            height: fit-content;
+            justify-content: center;
+        }
         .r-card {
             display: flex;
             flex-direction: column;
