@@ -1,35 +1,5 @@
 //Desktops
-.explorar {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: min-content;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
-
-.concat {
-    width: 50%;
-    height: 80vh;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF562;
-}
-
-.coneve {
-    width: 50%;
-    height: 80vh;
-    padding: 20px;
-    align-items: center;
-    background-color: white;
-}
-
-.cateveinf {
-    margin-bottom: 30px;
-} //Medium devices Tablets/Desktops (≥992px)
+//Medium devices Tablets/Desktops (≥992px)
 @media screen and (min-width: 992px) {}
 
 //Medium devices Tablets (≥768px)
