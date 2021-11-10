@@ -29,7 +29,10 @@
                     label: "Categoría", 
                     collection: %w{Drones Electrodomésticos Inflables Cámaras Construcción Mobiliario Ropa Transporte},
                     required: true %>               
-                            
+        <%= f.input :photo,
+                    as: :file,
+                    class: "input-style",
+                    id: "upload" %>                     
         <br>
         <%= f.submit 'Agregar producto' %>
       <% end %>
