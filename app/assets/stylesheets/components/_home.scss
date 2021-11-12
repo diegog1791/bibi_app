@@ -27,7 +27,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    padding: 30px;
+    padding: 15px;
 }
 
 .extinfo {
@@ -36,10 +36,6 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-}
-
-.extinfc {
-    margin-left: 20px;
 }
 
 .comp-title {
@@ -77,7 +73,7 @@
 .liscatubi {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #faee4e;
     padding: 40px 40px 40px 100px;
 }
@@ -87,7 +83,7 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    text-align: center;
+    text-align: start;
     padding: 0;
 }
 
@@ -117,7 +113,7 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-        padding: 30px;
+        padding: 15px;
     }
     .extinfo {
         display: flex;
@@ -163,7 +159,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
         list-style-type: none;
         padding: 0;
     }
@@ -180,11 +176,12 @@
         align-items: center;
     }
     .intbibi h1 {
-        font-size: 190px;
+        font-size: 150px;
     }
     .inttyp {
         display: flex;
         flex-direction: row;
+        width: max-content;
     }
     .typewrite {
         color: #FFF562;
@@ -196,12 +193,12 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-        background-color: #FFF562;
-        padding: 30px;
+        padding: 15px;
     }
     .extinfo {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        width: 33%;
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
@@ -243,7 +240,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
         list-style-type: none;
         padding: 0;
     }
@@ -281,8 +278,7 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-        background-color: #FFF562;
-        padding: 30px;
+        padding: 15px;
     }
     .extinfo {
         display: flex;
@@ -361,12 +357,12 @@
         flex-direction: column;
         width: 100%;
         justify-content: center;
-        background-color: #FFF562;
         padding: 15px;
     }
     .extinfo {
         display: flex;
         flex-direction: column;
+        width: auto;
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
