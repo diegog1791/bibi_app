@@ -6,7 +6,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("navbar")
+
+
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -24,7 +25,16 @@ const items = document.querySelectorAll('.item'),
     interval = 5000;
 
 let current = 0;
-//HOME SLIDER CATEGORIAS Y EVENTOS
 
 
+//MENU AVATAR TOGGLE
+
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 //NAVBAR SCROLLL
