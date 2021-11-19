@@ -31,6 +31,21 @@
                       label: 'Confirmar contraseña',
                       required: true,
                       input_html: { autocomplete: "new-password" } %>
+          <%= f.input :cellphone_number,
+                      label: 'Teléfono',
+                      required: true %>
+          <%= f.input :birthday,
+                      label: 'Cumpleaños',
+                      required: true %>
+          <%= f.input :rfc,
+                      label: 'RFC',
+                      required: true %>
+          <%= f.input :drop_off_location,
+                      label: 'Dirección',
+                      required: true %>
+          <%= f.input :about,
+                      label: 'Acerca de mí',
+                      required: true %>
         </div>
 
         <div class="form-actions">
