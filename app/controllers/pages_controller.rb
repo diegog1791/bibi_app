@@ -22,6 +22,6 @@ class PagesController < ApplicationController
   def arrendatario; end
 
   def dashboard; end
-  
+
   def perfil; end
 end
