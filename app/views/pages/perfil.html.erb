@@ -1,0 +1,42 @@
+<%= current_user.name %>
+<br>
+<%= current_user.last_name %>
+<br>
+<%= current_user.mothers_last_name %>
+<br>
+<% month_number = current_user.created_at.month 
+  month = nil
+  case month_number
+  when 1
+    month = "Enero"
+  when 2
+    month = "Febrero"
+  when 3
+    month = "Marzo"
+  when 4
+    month = "Abril"
+  when 5
+    month = "Mayo"
+  when 6
+    month = "Junio"
+  when 7
+    month = "Julio"
+  when 8
+    month = "Agosto"
+  when 9
+    month = "Septiembre"
+  when 10
+    month = "Octubre"
+  when 11
+    month = "Noviembre"
+  when 12
+    month = "Diciembre"       
+  end
+%>
+<%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
+<br>
+reviews (no conectado)
+<br>
+<br>
+<br>
+<br>
