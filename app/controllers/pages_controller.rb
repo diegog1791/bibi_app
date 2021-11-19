@@ -20,4 +20,8 @@ class PagesController < ApplicationController
   def arrendador; end
 
   def arrendatario; end
+
+  def dashboard; end
+  
+  def perfil; end
 end
