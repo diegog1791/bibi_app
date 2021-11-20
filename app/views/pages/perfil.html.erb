@@ -1,0 +1,47 @@
+<%= current_user.email %>
+
+<%= current_user.name %>
+<br>
+<%= current_user.last_name %>
+<br>
+<%= current_user.mothers_last_name %>
+<br>
+<% month_number = current_user.created_at.month 
+  month = nil
+  case month_number
+  when 1 then month = "Enero"
+  when 2 then month = "Febrero"
+  when 3 then month = "Marzo"
+  when 4 then month = "Abril"
+  when 5 then month = "Mayo"
+  when 6 then month = "Junio"
+  when 7 then month = "Julio"
+  when 8 then month = "Agosto"
+  when 9 then month = "Septiembre"
+  when 10 then month = "Octubre"
+  when 11 then month = "Noviembre"
+  when 12 then month = "Diciembre"       
+  end
+%>
+<%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
+<br>
+reviews (no conectado)
+<br>
+<%= current_user.birthday %>
+el cumpleaños esta en nil
+<br>
+cellphone_number esta en nil
+<br>
+direccion esta en nil
+<br>
+dropoff 2 esta en nil
+<br>
+describe un poco de ti no existe esa columna
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

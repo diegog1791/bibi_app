@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   # user profile
   get 'dashboard' => 'profile#dashboard'
+  get 'perfil' => 'pages#perfil'
 
   # product routes
   resources :products
