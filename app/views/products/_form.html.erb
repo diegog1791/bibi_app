@@ -1,16 +1,41 @@
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-4">
-      <%= simple_form_for(product) do |f| %>
-        <%= f.input :title,
+<%= simple_form_for(product) do |f| %>
+<div class="fornew">
+  <div class="forimg">
+  
+  </div>
+  <div class="forinfogen">
+    <div class="titdes">
+      Titulo y descripcion
+      <%= f.input :title,
                     label: 'Titulo del producto',
                     required: true %>
-        <%= f.input :description,
+      <%= f.input :description,
                     label: 'Descripción del producto',
-                    required: true %>
+                    required: true %>              
+    </div>
+    <div class="infper">
+      Informacion perfil (Quien lo renta, estrellas perfil, ubicacion y cant articulos)
+    </div>
+    <div class="zonent">
+      Zonas de entregas
+    </div>
+    <div class="otrart">
+      Más artículos del perfil
+    </div>
+    <div class="revper">
+      Reviews del perfil
+    </div>
+
+    <div class="artrel">
+      Artículos relacionados 
+    </div>
+
+  </div>
+  
+  
+
+        
+        
         <%= f.input :daily_price,
                     label: 'Precio por dia',
                     required: true
@@ -39,8 +64,5 @@
         <br>
         <%= f.submit 'Agregar producto' %>
       <% end %>
-    </div>
-  </div>
-</div>    </div>
-  </div>
 </div>
+  

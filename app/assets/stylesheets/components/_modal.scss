@@ -1,0 +1,300 @@
+.comp-tit {
+    text-align: center;
+}
+
+.shosubtitc {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modinfcon {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+//Division izquierda info general
+.modinfgen {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 15px;
+    align-items: center;
+}
+
+.modinffot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    margin: 0 5px 20px 5px;
+}
+
+.fotpri {
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1637363365/bibi/Products.Pictures/drone4_dtd9yw.jpg");
+    width: 100%;
+    height: 70%;
+    margin: 0 2.5px 2.5px 2.5px;
+    box-shadow: 0 0 5px 0 #EFEFEF;
+}
+
+.fotsec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+
+.fotsectod {
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1637363365/bibi/Products.Pictures/drone2_rd9oud.jpg");
+    width: 25%;
+    margin: 2.5px;
+    justify-content: space-between;
+    box-shadow: 0 0 5px 0 #EFEFEF;
+}
+
+//Informacion general
+.modinfcat {
+    margin-bottom: 20px;
+}
+
+.modinfdes {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: #EFEFEF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+//Informacion perfil arrendador
+.modinfper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: #EFEFEF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modinfperizq {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.modinfperava {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    margin-right: 20px;
+}
+
+.modinfpreder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    justify-content: space-around;
+}
+
+//Informacion ubicaciones de entrega
+.modinfubi {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: #EFEFEF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modinfubiizq {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.modinfubider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    justify-content: space-around;
+}
+
+//Informacion reviews arrendador
+.modinfrev {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: #EFEFEF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modinfrevcom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.modinfrevarr {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.modrevcal {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+}
+
+//Informacion MÁS ARTÍCULOS CARDS
+.shocarcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.shocarprod {
+    width: 180px;
+    height: 240px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//Image product
+.shoimgcon {
+    width: 180px;
+    height: 130px;
+}
+
+.shoimgprod {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+//Card title product
+.shcartit {
+    margin: 0 5px 0 5px;
+}
+
+//Card product title font
+.shocarfon {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+//Card owner information
+.shocarowninf {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 12px;
+}
+
+.shoownam {
+    margin: 0;
+}
+
+.shoownamfon {
+    font-size: 12px;
+}
+
+//Card information product
+.shoinfprod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 14px;
+}
+
+.shoprostarev {
+    display: flex;
+    flex-direction: row;
+}
+
+//Card products stars
+.shoprodstico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.shoprodstav .shoprorev {
+    margin: 0;
+    font-size: 8px;
+    align-items: center;
+}
+
+//Card product price
+.shopropri {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.shoprifon {
+    font-size: 18px;
+}
+
+//SECCION DERECHA: Division derecha info artículo y precios
+.modinfpre {
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+    width: 35%;
+    height: 600px;
+    padding: 5px;
+    align-items: center;
+}
+
+.modinftit {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.modinfpredsm {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.modpredsm {
+    width: 100%;
+    height: max-content;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+}
+
+.modprefon {
+    font-size: 28px;
+    font-weight: 100;
+}
