@@ -10,7 +10,7 @@
 .modinfcon {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin: auto;
 }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: 700px;
     margin: 0 5px 20px 5px;
 }
 
@@ -265,36 +265,50 @@
 .modinfpre {
     display: flex;
     flex-direction: column;
-    position: -webkit-sticky;
     position: sticky;
     top: 90px;
     width: 35%;
     height: 600px;
-    padding: 5px;
+    margin: 0;
     align-items: center;
 }
 
 .modinftit {
-    padding: 5px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.modprecon {
+    width: 100%;
+    align-items: center;
 }
 
 .modinfpredsm {
-    width: 100%;
-    height: max-content;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
     text-align: center;
-    justify-content: space-between;
 }
 
 .modpredsm {
-    width: 100%;
-    height: max-content;
-    margin: 10px;
+    padding: 20px;
+    margin: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     background-color: #EFEFEF;
 }
 
-.modprefon {
-    font-size: 28px;
-    font-weight: 100;
+.modbtns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btnmodsol {
+    height: 60px;
+    margin: 7px 7px 10px 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #FFF562;
 }
