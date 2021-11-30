@@ -23,6 +23,8 @@
   when 12 then month = "Diciembre"       
   end
 %>
+
+// setLocale()
 <%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
 <br>
 reviews (no conectado)
@@ -39,6 +41,7 @@ dropoff 2 esta en nil
 describe un poco de ti no existe esa columna
 <br>
 <br>
+<%= current_user.about %>
 <br>
 <br>
 <br>
