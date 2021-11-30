@@ -1,5 +1,5 @@
 <%= current_user.email %>
-
+<br>
 <%= current_user.name %>
 <br>
 <%= current_user.last_name %>
@@ -24,22 +24,16 @@
   end
 %>
 
-// setLocale()
+
 <%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
 <br>
 reviews (no conectado)
 <br>
 <%= current_user.birthday %>
-el cumpleaños esta en nil
 <br>
-cellphone_number esta en nil
+<%= current_user.cellphone_number %>
 <br>
-direccion esta en nil
-<br>
-dropoff 2 esta en nil
-<br>
-describe un poco de ti no existe esa columna
-<br>
+<%= current_user.drop_off_location %>
 <br>
 <%= current_user.about %>
 <br>
@@ -47,4 +41,5 @@ describe un poco de ti no existe esa columna
 <br>
 <br>
 <br>
+<%= current_user %>
 <br>
