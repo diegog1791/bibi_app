@@ -53,7 +53,7 @@
       </div>
     </div>
 <div class="shosubtit">
-      <h4>Entrega</h4>
+      <h4>Entregas</h4>
 </div>
     <div class="modinfubi">
       <div class="modinfubiizq">
@@ -279,23 +279,29 @@
 
   <div class="modinfpre">
     <div class="modinftit">
-      <h4><%= @product.title %></h4>
+      <h3><%= @product.title %></h3>
     </div>
-
     <div class="modinfpredsm">
       <h4>Precios</h4>
+    <div class="modprecon">
       <div class="modpredsm">
         <h4>Diario</h4>
-        <p class="modprefon"> <%= "$ #{@product.daily_price}" %> </p>
+        <h3> <%= "$ #{@product.daily_price}" %> <span color="black">/día</span></h3>
       </div>
       <div class="modpredsm">
-        <h4>Semanal (7 días)</h4>
-        <p class="modprefon"> <%= "$ #{@product.weekly_price}" %> </p>
+        <h4>+ 7 días</h4>
+        <h3> <%= "$ #{@product.weekly_price}" %> <span color="black">/día</span></h3>
       </div>
-      <div class="modpredsm">
-        <h4>Mensual (30 días)</h4>
-        <p class="modprefon"> <%= "$ #{@product.monthly_price}" %> </p>
+      <div class="modpredsm" >
+        <h4>+ 30 días</h4>
+        <h3> <%= "$ #{@product.monthly_price}" %> <span color="black">/día</span></h3>
       </div>
+     </div>
+     <div class="modbtns">
+      <button class="btnmodsol" >Rentar</button>
+      <a href="">Enviar mensaje</a>
+     </div>
     </div>
   </div>
+  
   </div>
