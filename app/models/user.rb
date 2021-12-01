@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :products
+
+  # validates :name, on: :create, message: "can't be blank"
 end

@@ -1,5 +1,5 @@
 <%= current_user.email %>
-
+<br>
 <%= current_user.name %>
 <br>
 <%= current_user.last_name %>
@@ -23,25 +23,39 @@
   when 12 then month = "Diciembre"       
   end
 %>
-<%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
+<%= current_user.created_at.strftime("Te uniste el #{current_user.created_at.day.to_i} de #{month} de %Y") %>
 <br>
 reviews (no conectado)
 <br>
-<%= current_user.birthday %>
-el cumpleaños esta en nil
+<% birth_month = current_user.birthday.to_s.split('-')[1].to_i
+  written_month = nil
+  case birth_month
+  when 1 then written_month = "Enero"
+  when 2 then written_month = "Febrero"
+  when 3 then written_month = "Marzo"
+  when 4 then written_month = "Abril"
+  when 5 then written_month = "Mayo"
+  when 6 then written_month = "Junio"
+  when 7 then written_month = "Julio"
+  when 8 then written_month = "Agosto"
+  when 9 then written_month = "Septiembre"
+  when 10 then written_month = "Octubre"
+  when 11 then written_month = "Noviembre"
+  when 12 then written_month = "Diciembre"       
+  end
+%>
+<%= "Tu cumpleaños es el #{current_user.birthday.day} de #{written_month} de #{current_user.birthday.year}" %>
 <br>
-cellphone_number esta en nil
+<%= current_user.cellphone_number %>
 <br>
-direccion esta en nil
+<%= current_user.drop_off_location %>
 <br>
-dropoff 2 esta en nil
+<%= current_user.about %>
 <br>
-describe un poco de ti no existe esa columna
-<br>
-<br>
+<%= current_user %>
 <br>
 <br>
 <br>
 <br>
-<br>
+<%= current_user %>
 <br>

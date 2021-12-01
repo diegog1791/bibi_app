@@ -15,7 +15,7 @@
         <li class="nav-item dropdown">
           <%= image_tag "https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Perfil", "#", class: "dropdown-item" %>
+            <%= link_to "Perfil", perfil_path, class: "dropdown-item" %>
             <%= link_to "Inbox", "#", class: "dropdown-item" %>
             <%= link_to "Artículos", "#", class: "dropdown-item" %>
             <%= link_to "Solicitudes", "#", class: "dropdown-item" %>
@@ -29,12 +29,3 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <%= link_to "Ingresar", user_session_path, class: "dropdown-item" %>
             <%= link_to "Registrarme", new_user_session_path, class: "dropdown-item", "data-toggle" => "modal", 'data-target' => '.modconsigin'  %>
-          </div>
-        </li>
-      <% end %>
-
-    </ul>
-    </div>
-  </div>
-
-</div>
