@@ -1,18 +1,18 @@
 class ApplicationController < ActionController::Base
   # protect_from_surgery with: :exception
   before_action :authenticate_user!
-  # before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :configure_permitted_parameters, if: :devise_controller?
   include Pundit
 
   # # Pundit: white-list approach
   after_action :verify_authorized, except: :index, unless: :skip_pundit?
   after_action :verify_policy_scoped, only: :index, unless: :skip_pundit?
 
-  # def configure_permitted_parameters
-  #   devise_parameter_sanitizer.permit(:sign_up, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about])
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about])
 
-  #   devise_parameter_sanitizer.permit(:account_update, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about])
-  # end
+    devise_parameter_sanitizer.permit(:account_update, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about])
+  end
 
   private
 
