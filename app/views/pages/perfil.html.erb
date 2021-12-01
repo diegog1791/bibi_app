@@ -23,8 +23,6 @@
   when 12 then month = "Diciembre"       
   end
 %>
-
-
 <%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
 <br>
 reviews (no conectado)
@@ -37,6 +35,7 @@ reviews (no conectado)
 <br>
 <%= current_user.about %>
 <br>
+<%= current_user %>
 <br>
 <br>
 <br>
