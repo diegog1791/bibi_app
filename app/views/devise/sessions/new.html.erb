@@ -1,4 +1,4 @@
-<div class="modsigin">
+<div class="modsigin" id="modSigin">
   <div class="row justify-content-center">
     <div class="col-4">
     
@@ -6,15 +6,17 @@
 
       <br>
 
-        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-inputs">
             <%= f.input :email,
-                        label: 'Correo Electrónico',
+                        label: false,
+                        placeholder: "Email",
                         required: false,
                         autofocus: true,
                         input_html: { autocomplete: "email" } %>
             <%= f.input :password,
-                        label: 'Contraseña',
+                        label: false,
+                        placeholder: "Contraseña",
                         required: false,
                         input_html: { autocomplete: "current-password" } %>
             <%= f.input :remember_me,
@@ -26,7 +28,6 @@
             <%= f.button :submit, "Inicia sesión" %>
           </div>
         <% end %>
-
         <br>
 
         <%= render "devise/shared/links" %>
@@ -36,3 +37,6 @@
     </div>
   </div>
 </div>
+
+
+

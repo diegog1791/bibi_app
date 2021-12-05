@@ -29,12 +29,10 @@ let current = 0;
 
 //MENU AVATAR TOGGLE
 
-function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-//NAVBAR SCROLLL
+
+
+
+//MODAL
+$('#myModal').on('shown.bs.modal', function() {
+    $('#myInput').trigger('focus')
+})
