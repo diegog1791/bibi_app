@@ -1,3 +1,8 @@
+<hr>
+<br>
+************PERFIL***********
+<br>
+<hr>
 <br>
 Nombre:
 <%= current_user.name %>
@@ -57,6 +62,41 @@ Dirección:
 Describe un poco de ti:
 <%= current_user.about %>
 <br>
+<hr>
+<br>
+************CUENTA***********
+<br>
+<hr>
+<br>
+<%= "#{current_user.name} #{current_user.last_name.chars.first}." %>
+<hr>
+<br>
+Dirección:
+<%= current_user.drop_off_location %>
+<br>
+Colonia:
+<%= current_user.neighborhood %>
+<br>
+C.P.:
+<%= current_user.zip_code %>
+<br>
+Ciudad:
+<%= current_user.city %>
+<br>
+Estado:
+<%= current_user.state %>
+<br>
+País:
+<%= current_user.bb_coun_try %>
+<br>
+Tarjeta de credito (pagos) // no conectado
+<br>
+No. cuenta (depósitos) // no conectado
+<br>
+CLABE (depósitos) // no conectado
+<br>
+RFC: 
+<%= current_user.rfc %>
 <br>
 <br>
 <br>
