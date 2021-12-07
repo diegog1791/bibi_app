@@ -31,6 +31,9 @@
                       label: 'Confirmar contraseña',
                       required: true,
                       input_html: { autocomplete: "new-password" } %>
+          <%= f.input :photo_id,
+                      label: 'Código de país (México: +52)',
+                      required: true %>            
           <%= f.input :cellphone_number,
                       label: 'Teléfono',
                       required: true %>
@@ -41,8 +44,23 @@
                       label: 'RFC',
                       required: true %>
           <%= f.input :drop_off_location,
-                      label: 'Dirección',
+                      label: 'Dirección (Calle y número)',
                       required: true %>
+          <%= f.input :neighborhood,
+                      label: 'Colonia',
+                      required: true %>
+          <%= f.input :city,
+                      label: 'Ciudad',
+                      required: true %>
+          <%= f.input :state,
+                      label: 'Estado',
+                      required: true %>
+          <%= f.input :about,
+                      label: 'País',
+                      required: true %>
+          <%= f.input :zip_code,
+                      label: 'Código Postal',
+                      required: true %>                                        
           <%= f.input :about,
                       label: 'Acerca de mí',
                       required: true %>
