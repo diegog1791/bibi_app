@@ -27,16 +27,14 @@
 <br>
 reviews (no conectado)
 <br>
-<%= current_user.birthday %>
-el cumpleaños esta en nil
+<% birthday = current_user.birthday %>
+cumpleaños <%= "#{birthday.day}/#{birthday.month}/#{birthday.year}" %>
 <br>
-cellphone_number esta en nil
+<%= current_user.cellphone_number %>
 <br>
-direccion esta en nil
+<%= current_user.drop_off_location %>
 <br>
-dropoff 2 esta en nil
-<br>
-describe un poco de ti no existe esa columna
+<%= current_user.about %>
 <br>
 <br>
 <br>
