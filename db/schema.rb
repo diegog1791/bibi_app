@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_07_191509) do
+ActiveRecord::Schema.define(version: 2021_12_07_195445) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,12 +56,12 @@ ActiveRecord::Schema.define(version: 2021_12_07_191509) do
     t.text "drop_off_location"
     t.date "birthday"
     t.string "google_id"
-    t.string "country_code"
+    t.string "bb_country_code"
     t.text "neighborhood"
     t.string "zip_code"
     t.string "city"
     t.string "state"
-    t.string "country"
+    t.string "bb_country"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
