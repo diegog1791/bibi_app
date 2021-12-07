@@ -9,9 +9,9 @@ class ApplicationController < ActionController::Base
   after_action :verify_policy_scoped, only: :index, unless: :skip_pundit?
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about bb_country_code neighborhood zip_code city state bb_country])
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about bb_coun_try_code neighborhood zip_code city state bb_coun_try])
 
-    devise_parameter_sanitizer.permit(:account_update, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about bb_country_code neighborhood zip_code city state bb_country])
+    devise_parameter_sanitizer.permit(:account_update, keys: %i[name last_name mothers_last_name cellphone_number birthday rfc drop_off_location about bb_coun_try_code neighborhood zip_code city state bb_coun_try])
   end
 
   private
