@@ -1,9 +1,16 @@
-<%= current_user.email %>
-
+<hr>
+<br>
+************PERFIL***********
+<br>
+<hr>
+<br>
+Nombre:
 <%= current_user.name %>
 <br>
+Apellido Paterno:
 <%= current_user.last_name %>
 <br>
+Apellido Materno:
 <%= current_user.mothers_last_name %>
 <br>
 <% month_number = current_user.created_at.month 
@@ -25,19 +32,71 @@
 %>
 <%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
 <br>
-reviews (no conectado)
+0 reviews (no conectado)
 <br>
-<%= current_user.birthday %>
-el cumpleaños esta en nil
+<% birthday = current_user.birthday %>
+<% birth_month = birthday.month
+  written_month = nil
+  case birth_month
+  when 1 then written_month = "Enero"
+  when 2 then written_month = "Febrero"
+  when 3 then written_month = "Marzo"
+  when 4 then written_month = "Abril"
+  when 5 then written_month = "Mayo"
+  when 6 then written_month = "Junio"
+  when 7 then written_month = "Julio"
+  when 8 then written_month = "Agosto"
+  when 9 then written_month = "Septiembre"
+  when 10 then written_month = "Octubre"
+  when 11 then written_month = "Noviembre"
+  when 12 then written_month = "Diciembre"       
+  end
+%>
+Cumpleaños: <%= "#{birthday.day}/#{written_month}/#{birthday.year}" %>
 <br>
-cellphone_number esta en nil
+Teléfono: <%= "+#{current_user.bb_coun_try_code} #{current_user.cellphone_number}" %>
 <br>
-direccion esta en nil
+Dirección:
+<%= "#{current_user.drop_off_location}, Col. #{current_user.neighborhood}, C.P.: #{current_user.zip_code}, #{current_user.state}" %>
 <br>
-dropoff 2 esta en nil
+Describe un poco de ti:
+<%= current_user.about %>
 <br>
-describe un poco de ti no existe esa columna
+<hr>
 <br>
+************CUENTA***********
+<br>
+<hr>
+<br>
+<%= "#{current_user.name} #{current_user.last_name.chars.first}." %>
+<hr>
+<br>
+Dirección:
+<%= current_user.drop_off_location %>
+<br>
+Colonia:
+<%= current_user.neighborhood %>
+<br>
+C.P.:
+<%= current_user.zip_code %>
+<br>
+Ciudad:
+<%= current_user.city %>
+<br>
+Estado:
+<%= current_user.state %>
+<br>
+País:
+<%= current_user.bb_coun_try %>
+<br>
+Tarjeta de credito (pagos) // no conectado
+<br>
+No. cuenta (depósitos) // no conectado
+<br>
+CLABE (depósitos) // no conectado
+<br>
+RFC: 
+<%= current_user.rfc %>
 <br>
 <br>
 <br>
