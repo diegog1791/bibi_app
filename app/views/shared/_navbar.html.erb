@@ -28,8 +28,13 @@
           <li class="nav-item dropdown">
             <%= image_tag "https://res.cloudinary.com/dfy5vakwb/image/upload/v1638230967/bibi/shared/Benzene_Ring_hfy45y.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
+              <%= link_to "Ingresar", user_session_path, class: "dropdown-item", "data-toggle" => "modal", "data-target" => "#signinModal" %>
+              <%= link_to "Registrarme", new_user_registration_path, class: "dropdown-item", "data-toggle" => "modal", "data-target" => "#signupModal"%>
+=======
               <%= link_to "Ingresar", user_session_path, class: "dropdown-item","data-toggle" => "modal", 'data-target' => '.modsigin' %>
               <%= link_to "Registrarme", new_user_registration_path, class: "dropdown-item"%>
+>>>>>>> 46a7dcafb9ab79a7ea342233cafa2fc7026641be
             </div>
     <%end%>
   </div>

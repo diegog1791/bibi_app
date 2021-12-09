@@ -1,0 +1,67 @@
+<div class="modal" id="signupModal" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Inicia sesion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-inputs">
+          <%= f.input :name,
+                      label: 'Nombre',
+                      required: true %>
+          <%= f.input :last_name,
+                      label: 'Apellido Paterno',
+                      required: true %>
+          <%= f.input :mothers_last_name,
+                      label: 'Apellido Materno',
+                      required: true %>
+          <%= f.input :email,
+                      label: 'Correo Electrónico',
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" }%>
+          <%= f.input :password,
+                      label: 'Contraseña',
+                      required: true,
+                      hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                      input_html: { autocomplete: "new-password" } %>
+          <%= f.input :password_confirmation,
+                      label: 'Confirmar contraseña',
+                      required: true,
+                      input_html: { autocomplete: "new-password" } %>
+          <%= f.input :cellphone_number,
+                      label: 'Teléfono',
+                      required: true %>
+          <%= f.input :birthday,
+                      label: 'Cumpleaños',
+                      required: true %>
+          <%= f.input :rfc,
+                      label: 'RFC',
+                      required: true %>
+          <%= f.input :drop_off_location,
+                      label: 'Dirección',
+                      required: true %>
+          <%= f.input :about,
+                      label: 'Acerca de mí',
+                      required: true %>
+        </div>
+
+        
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"><div class="form-actions">
+          <%= f.button :submit, "Enviar" %>
+        </div></button>
+      </div>
+       <% end %>
+    </div>
+  </div>
+</div>
