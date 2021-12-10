@@ -1,22 +1,63 @@
-.modsignincon {
+.modal {
+    margin-top: 30px;
+}
+
+.modal-content {
     margin: auto;
-    padding: 20px;
-    background-color: #E5E5E5;
-    align-content: flex-end;
+    width: fit-content;
+    height: fit-content;
 }
 
-.modsigninhea {
+.modal-header {
+    justify-content: flex-end;
+    border: none;
+}
+
+.modsignupcon {
     display: flex;
+    flex-direction: row;
+    margin: auto;
     justify-content: space-between;
-    margin-bottom: 10px;
 }
 
-.modbtnclo {}
+.imgforsignup {
+    height: 600px;
+}
 
-.modsigninbod {}
+.form-signup {
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: auto;
+    margin: 30px
+}
 
-.modsignintit {}
+.intsignup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-.modsignininp .signinema {
-    margin: 10px;
+.taginput {
+    width: -webkit-fill-available;
+    margin: 15px;
+    border-radius: 5px;
+    color: blueviolet;
+}
+
+.btnsignupcon {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.btnsignup {
+    width: -webkit-fill-available;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #FFF562;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
