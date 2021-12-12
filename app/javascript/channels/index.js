@@ -4,6 +4,7 @@
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
+// TYPE LOOP 
 document.addEventListener('DOMContentLoaded', function() {
     let wrapper = document.getElementById('wrapper');
     let topLayer = wrapper.querySelector('.top');
@@ -23,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         topLayer.style.width = e.clientX + skew + delta + 'px';
     });
 
-    // TYPE LOOP 
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;

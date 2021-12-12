@@ -1,307 +1,328 @@
-<div class="comp-tit">
-  <h2>Vive la experiencia</h2>
-</div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showModalScrollable">
+  Launch demo modal
+</button>
 
-<div class="modinfcon">
-  <div class="modinfgen">
-    <div class="modinffot"><%# <%= cl_image_tag @product.photo.key, height: 300, width: 400, crop: :fill %>  
-      <div class="fotpri">
-        Foto principal (1)
+<!-- Modal -->
+<div class="modal fade" id="showModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="shomodalcont modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="comp-tit">
+          <h2>Vive la experiencia</h2>
       </div>
-      <div class="fotsec">
-        <div class="fotsectod">
-          Fotos secundarias no.1
-        </div>
-        <div class="fotsectod">
-          Fotos secundarias no.2
-        </div>
-        <div class="fotsectod">
-          Fotos secundarias no.3
-        </div>
-        <div class="fotsectod">
-          Fotos secundarias no.4
-        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">    
+    <div class="modinfcon">
+      <div class="modinfgen">
+        <div class="modinffot"><%# <%= cl_image_tag @product.photo.key, height: 300, width: 400, crop: :fill %>  
+          <div class="fotpri">
+            Foto principal (1)
+          </div>
+          <div class="fotsec">
+            <div class="fotsectod">
+              Fotos secundarias no.1
+            </div>
+            <div class="fotsectod">
+              Fotos secundarias no.2
+            </div>
+            <div class="fotsectod">
+              Fotos secundarias no.3
+            </div>
+            <div class="fotsectod">
+              Fotos secundarias no.4
+            </div>
+          </div>
+        </div>
+
+        <div class="modinfpro">
+          <h4>Información</h4>
+        </div>
+        <div class="modinfcat">
+          Categoria/Subcategoria/Artículo    
+        </div>
+
+    <div class="shosubtit">
+          <h4>Descripción del artículo</h4>
     </div>
 
-    <div class="modinfpro">
-      <h4>Información</h4>
+        <div class="modinfdes">
+          <p> <%= @product.description %> </p>
+        </div>
+
+          <h4>Arrendador</h4>
+
+        <div class="modinfper">
+          <img class="modinfperava"src="https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg" alt="">
+          <div class="modinfperizq">
+            <p> Diego G.</p>
+            <p> Ciudad de México </p>
+          </div>
+          <div class="modinfpreder">
+            <p>Calificación xxxxx</p>
+            <p>Artículos 34</p>
+          </div>
+        </div>
+    <div class="shosubtit">
+          <h4>Entregas</h4>
     </div>
-    <div class="modinfcat">
-      Categoria/Subcategoria/Artículo    
+        <div class="modinfubi">
+          <div class="modinfubiizq">
+            <div class="modubi">
+              <p> Opcion 1</p>
+              <p> Roma norte </p>
+            </div>
+            <div class="modubi">
+              <p> Opción 2</p>
+              <p> Roma sur </p>
+            </div>
+          </div>
+          <div class="modinfubider">
+            <div class="modubimap">
+              <p> Mapa 1</p>
+            </div>
+            <div class="modubimap">
+              <p> Mapa 2</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="shosubtit">
+      <h4>Reviews</h4>
     </div>
 
-<div class="shosubtit">
-      <h4>Descripción del artículo</h4>
-</div>
+        <div class="modinfrev">
+          <div class="modinfrevcom">
+            <div class="modrevarr">
+              <p> Arrendatario</p>
+              <p> Comentario </p>
+            </div>
+            <div class="modrevcal">
+              <p> Calificación</p>
+              <p> Calificación</p>
+            </div>   
+          </div>
+        </div>
 
-    <div class="modinfdes">
-      <p> <%= @product.description %> </p>
+    <div class="shosubtit">
+      <h4>Más artículos</h4>
     </div>
 
-      <h4>Arrendador</h4>
+    <div class="shocarcon">
 
-    <div class="modinfper">
-      <img class="modinfperava"src="https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg" alt="">
-      <div class="modinfperizq">
-        <p> Diego G.</p>
-        <p> Ciudad de México </p>
-      </div>
-      <div class="modinfpreder">
-        <p>Calificación xxxxx</p>
-        <p>Artículos 34</p>
-      </div>
-    </div>
-<div class="shosubtit">
-      <h4>Entregas</h4>
-</div>
-    <div class="modinfubi">
-      <div class="modinfubiizq">
-        <div class="modubi">
-          <p> Opcion 1</p>
-          <p> Roma norte </p>
+      <%#@products.each do |product| %>
+
+      <div class="shocarprod"> <%#Show Card Products%>
+        <div class="shoimgcon">
+          <a href="">
+          <%#Top Image Products%>
+            <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
         </div>
-        <div class="modubi">
-          <p> Opción 2</p>
-          <p> Roma sur </p>
+          <div class="shcartit"> <%#Show card Title Products%>
+            <p class="shocarfon"> <%#Show card Product Title Font%>
+            Dron DJI Mavic 2019 + baterias y control
+            <%#= link_to "#{product.title}", product_path(product) %>
+            </p> 
+          </div>
+          <div class="shocarowninf"> <%#Show card Info Owner%>
+            <div class="shoinfprod"> <%#Show card Info Product%>
+              <div class="showowl"> <%#Show card Owner Level%>
+                <i class="fas fa-bolt fa-sm"></i>
+              </div>
+              <div class="shoownam"> <%#Show card Owner Name%>
+                <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
+              </div>
+            </div>
+            <div class="shoprostarev">
+              <div class="shoprodstico"> <%#Show card Product Stars Icons%>
+                <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
+              </div>
+              <div class="shoprodstav"> <%#Show card Products Stars Average%>
+                <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
+              </div>
+            </div>
+          </div>
+            <div class="shopropri"><%#Show card products Price%>
+              <p class="shoprifon">
+              $1,200
+                <%#= "$ #{product.daily_price}" %>
+              </p>
+              <p>/día</p> <%#Show card Price Font%>
+            </div>
+          </a>
         </div>
+      <%# end %>
+      <%#@products.each do |product| %>
+
+      <div class="shocarprod"> <%#Show Card Products%>
+        <div class="shoimgcon">
+          <a href="">
+          <%#Top Image Products%>
+            <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
+        </div>
+          <div class="shcartit"> <%#Show card Title Products%>
+            <p class="shocarfon"> <%#Show card Product Title Font%>
+            Dron DJI Mavic 2019 + baterias y control
+            <%#= link_to "#{product.title}", product_path(product) %>
+            </p> 
+          </div>
+          <div class="shocarowninf"> <%#Show card Info Owner%>
+            <div class="shoinfprod"> <%#Show card Info Product%>
+              <div class="showowl"> <%#Show card Owner Level%>
+                <i class="fas fa-bolt fa-sm"></i>
+              </div>
+              <div class="shoownam"> <%#Show card Owner Name%>
+                <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
+              </div>
+            </div>
+            <div class="shoprostarev">
+              <div class="shoprodstico"> <%#Show card Product Stars Icons%>
+                <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
+              </div>
+              <div class="shoprodstav"> <%#Show card Products Stars Average%>
+                <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
+              </div>
+            </div>
+          </div>
+            <div class="shopropri"><%#Show card products Price%>
+              <p class="shoprifon">
+              $1,200
+                <%#= "$ #{product.daily_price}" %>
+              </p>
+              <p>/día</p> <%#Show card Price Font%>
+            </div>
+          </a>
+        </div>
+      <%# end %>
+      <%#@products.each do |product| %>
+
+      <div class="shocarprod"> <%#Show Card Products%>
+        <div class="shoimgcon">
+          <a href="">
+          <%#Top Image Products%>
+            <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
+        </div>
+          <div class="shcartit"> <%#Show card Title Products%>
+            <p class="shocarfon"> <%#Show card Product Title Font%>
+            Dron DJI Mavic 2019 + baterias y control
+            <%#= link_to "#{product.title}", product_path(product) %>
+            </p> 
+          </div>
+          <div class="shocarowninf"> <%#Show card Info Owner%>
+            <div class="shoinfprod"> <%#Show card Info Product%>
+              <div class="showowl"> <%#Show card Owner Level%>
+                <i class="fas fa-bolt fa-sm"></i>
+              </div>
+              <div class="shoownam"> <%#Show card Owner Name%>
+                <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
+              </div>
+            </div>
+            <div class="shoprostarev">
+              <div class="shoprodstico"> <%#Show card Product Stars Icons%>
+                <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
+              </div>
+              <div class="shoprodstav"> <%#Show card Products Stars Average%>
+                <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
+              </div>
+            </div>
+          </div>
+            <div class="shopropri"><%#Show card products Price%>
+              <p class="shoprifon">
+              $1,200
+                <%#= "$ #{product.daily_price}" %>
+              </p>
+              <p>/día</p> <%#Show card Price Font%>
+            </div>
+          </a>
+        </div>
+      <%# end %>
+      <%#@products.each do |product| %>
+
+      <div class="shocarprod"> <%#Show Card Products%>
+        <div class="shoimgcon">
+          <a href="">
+          <%#Top Image Products%>
+            <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
+        </div>
+          <div class="shcartit"> <%#Show card Title Products%>
+            <p class="shocarfon"> <%#Show card Product Title Font%>
+            Dron DJI Mavic 2019 + baterias y control
+            <%#= link_to "#{product.title}", product_path(product) %>
+            </p> 
+          </div>
+          <div class="shocarowninf"> <%#Show card Info Owner%>
+            <div class="shoinfprod"> <%#Show card Info Product%>
+              <div class="showowl"> <%#Show card Owner Level%>
+                <i class="fas fa-bolt fa-sm"></i>
+              </div>
+              <div class="shoownam"> <%#Show card Owner Name%>
+                <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
+              </div>
+            </div>
+            <div class="shoprostarev">
+              <div class="shoprodstico"> <%#Show card Product Stars Icons%>
+                <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
+              </div>
+              <div class="shoprodstav"> <%#Show card Products Stars Average%>
+                <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
+              </div>
+            </div>
+          </div>
+            <div class="shopropri"><%#Show card products Price%>
+              <p class="shoprifon">
+              $1,200
+                <%#= "$ #{product.daily_price}" %>
+              </p>
+              <p>/día</p> <%#Show card Price Font%>
+            </div>
+          </a>
+        </div>
+      <%# end %>
+      
+      
       </div>
-      <div class="modinfubider">
-        <div class="modubimap">
-          <p> Mapa 1</p>
-        </div>
-        <div class="modubimap">
-          <p> Mapa 2</p>
-        </div>
-      </div>
+
+
+      
+        <%= link_to 'Regresar', products_path %>
+      
     </div>
 
-<div class="shosubtit">
-  <h4>Reviews</h4>
-</div>
+      <div class="modinfpre">
+        <div class="modinftit">
+          <h3><%= @product.title %></h3>
+        </div>
+        <div class="modinfpredsm">
+          <h4>Precios</h4>
+        <div class="modprecon">
+          <div class="modpredsm">
+            <h4>Diario</h4>
+            <h3> <%= "$ #{@product.daily_price}" %> <span color="black">/día</span></h3>
+          </div>
+          <div class="modpredsm">
+            <h4>+ 7 días</h4>
+            <h3> <%= "$ #{@product.weekly_price}" %> <span color="black">/día</span></h3>
+          </div>
+          <div class="modpredsm" >
+            <h4>+ 30 días</h4>
+            <h3> <%= "$ #{@product.monthly_price}" %> <span color="black">/día</span></h3>
+          </div>
+        </div>
+        <div class="modbtns">
+          <button class="btnmodsol" >Rentar</button>
+          <a href="">Enviar mensaje</a>
+        </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
 
-    <div class="modinfrev">
-      <div class="modinfrevcom">
-        <div class="modrevarr">
-          <p> Arrendatario</p>
-          <p> Comentario </p>
-        </div>
-        <div class="modrevcal">
-          <p> Calificación</p>
-          <p> Calificación</p>
-        </div>   
       </div>
+      
     </div>
-
-<div class="shosubtit">
-  <h4>Más artículos</h4>
-</div>
-
-<div class="shocarcon">
-
-  <%#@products.each do |product| %>
-
-  <div class="shocarprod"> <%#Show Card Products%>
-    <div class="shoimgcon">
-      <a href="">
-      <%#Top Image Products%>
-        <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
-    </div>
-      <div class="shcartit"> <%#Show card Title Products%>
-        <p class="shocarfon"> <%#Show card Product Title Font%>
-        Dron DJI Mavic 2019 + baterias y control
-        <%#= link_to "#{product.title}", product_path(product) %>
-        </p> 
-      </div>
-      <div class="shocarowninf"> <%#Show card Info Owner%>
-        <div class="shoinfprod"> <%#Show card Info Product%>
-          <div class="showowl"> <%#Show card Owner Level%>
-            <i class="fas fa-bolt fa-sm"></i>
-          </div>
-          <div class="shoownam"> <%#Show card Owner Name%>
-            <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
-          </div>
-        </div>
-        <div class="shoprostarev">
-          <div class="shoprodstico"> <%#Show card Product Stars Icons%>
-            <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
-          </div>
-          <div class="shoprodstav"> <%#Show card Products Stars Average%>
-            <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
-          </div>
-        </div>
-      </div>
-        <div class="shopropri"><%#Show card products Price%>
-          <p class="shoprifon">
-          $1,200
-            <%#= "$ #{product.daily_price}" %>
-          </p>
-          <p>/día</p> <%#Show card Price Font%>
-        </div>
-      </a>
-    </div>
-  <%# end %>
-  <%#@products.each do |product| %>
-
-  <div class="shocarprod"> <%#Show Card Products%>
-    <div class="shoimgcon">
-      <a href="">
-      <%#Top Image Products%>
-        <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
-    </div>
-      <div class="shcartit"> <%#Show card Title Products%>
-        <p class="shocarfon"> <%#Show card Product Title Font%>
-        Dron DJI Mavic 2019 + baterias y control
-        <%#= link_to "#{product.title}", product_path(product) %>
-        </p> 
-      </div>
-      <div class="shocarowninf"> <%#Show card Info Owner%>
-        <div class="shoinfprod"> <%#Show card Info Product%>
-          <div class="showowl"> <%#Show card Owner Level%>
-            <i class="fas fa-bolt fa-sm"></i>
-          </div>
-          <div class="shoownam"> <%#Show card Owner Name%>
-            <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
-          </div>
-        </div>
-        <div class="shoprostarev">
-          <div class="shoprodstico"> <%#Show card Product Stars Icons%>
-            <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
-          </div>
-          <div class="shoprodstav"> <%#Show card Products Stars Average%>
-            <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
-          </div>
-        </div>
-      </div>
-        <div class="shopropri"><%#Show card products Price%>
-          <p class="shoprifon">
-          $1,200
-            <%#= "$ #{product.daily_price}" %>
-          </p>
-          <p>/día</p> <%#Show card Price Font%>
-        </div>
-      </a>
-    </div>
-  <%# end %>
-  <%#@products.each do |product| %>
-
-  <div class="shocarprod"> <%#Show Card Products%>
-    <div class="shoimgcon">
-      <a href="">
-      <%#Top Image Products%>
-        <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
-    </div>
-      <div class="shcartit"> <%#Show card Title Products%>
-        <p class="shocarfon"> <%#Show card Product Title Font%>
-        Dron DJI Mavic 2019 + baterias y control
-        <%#= link_to "#{product.title}", product_path(product) %>
-        </p> 
-      </div>
-      <div class="shocarowninf"> <%#Show card Info Owner%>
-        <div class="shoinfprod"> <%#Show card Info Product%>
-          <div class="showowl"> <%#Show card Owner Level%>
-            <i class="fas fa-bolt fa-sm"></i>
-          </div>
-          <div class="shoownam"> <%#Show card Owner Name%>
-            <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
-          </div>
-        </div>
-        <div class="shoprostarev">
-          <div class="shoprodstico"> <%#Show card Product Stars Icons%>
-            <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
-          </div>
-          <div class="shoprodstav"> <%#Show card Products Stars Average%>
-            <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
-          </div>
-        </div>
-      </div>
-        <div class="shopropri"><%#Show card products Price%>
-          <p class="shoprifon">
-          $1,200
-            <%#= "$ #{product.daily_price}" %>
-          </p>
-          <p>/día</p> <%#Show card Price Font%>
-        </div>
-      </a>
-    </div>
-  <%# end %>
-  <%#@products.each do |product| %>
-
-  <div class="shocarprod"> <%#Show Card Products%>
-    <div class="shoimgcon">
-      <a href="">
-      <%#Top Image Products%>
-        <img class="shoimgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_130,w_180/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
-    </div>
-      <div class="shcartit"> <%#Show card Title Products%>
-        <p class="shocarfon"> <%#Show card Product Title Font%>
-        Dron DJI Mavic 2019 + baterias y control
-        <%#= link_to "#{product.title}", product_path(product) %>
-        </p> 
-      </div>
-      <div class="shocarowninf"> <%#Show card Info Owner%>
-        <div class="shoinfprod"> <%#Show card Info Product%>
-          <div class="showowl"> <%#Show card Owner Level%>
-            <i class="fas fa-bolt fa-sm"></i>
-          </div>
-          <div class="shoownam"> <%#Show card Owner Name%>
-            <p class="shoownamfon"> Diego G.<%#= "#{product.user.name} #{product.user.last_name}." %> </p>
-          </div>
-        </div>
-        <div class="shoprostarev">
-          <div class="shoprodstico"> <%#Show card Product Stars Icons%>
-            <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
-          </div>
-          <div class="shoprodstav"> <%#Show card Products Stars Average%>
-            <p class="shoprorev">(47)</p> <%#Show card Product reviews%>
-          </div>
-        </div>
-      </div>
-        <div class="shopropri"><%#Show card products Price%>
-          <p class="shoprifon">
-          $1,200
-            <%#= "$ #{product.daily_price}" %>
-          </p>
-          <p>/día</p> <%#Show card Price Font%>
-        </div>
-      </a>
-    </div>
-  <%# end %>
-  
-  
   </div>
-
-
-   
-    <%= link_to 'Regresar', products_path %>
-  
 </div>
-
-  <div class="modinfpre">
-    <div class="modinftit">
-      <h3><%= @product.title %></h3>
-    </div>
-    <div class="modinfpredsm">
-      <h4>Precios</h4>
-    <div class="modprecon">
-      <div class="modpredsm">
-        <h4>Diario</h4>
-        <h3> <%= "$ #{@product.daily_price}" %> <span color="black">/día</span></h3>
-      </div>
-      <div class="modpredsm">
-        <h4>+ 7 días</h4>
-        <h3> <%= "$ #{@product.weekly_price}" %> <span color="black">/día</span></h3>
-      </div>
-      <div class="modpredsm" >
-        <h4>+ 30 días</h4>
-        <h3> <%= "$ #{@product.monthly_price}" %> <span color="black">/día</span></h3>
-      </div>
-     </div>
-     <div class="modbtns">
-      <button class="btnmodsol" >Rentar</button>
-      <a href="">Enviar mensaje</a>
-     </div>
-    </div>
-  </div>
-  
-  </div>
