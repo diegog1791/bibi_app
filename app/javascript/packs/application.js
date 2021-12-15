@@ -35,7 +35,8 @@ let current = 0;
 //MODAL
 $('#myModal').on('shown.bs.modal', function() {
     $('#myInput').trigger('focus')
-})
+});
+
 
 //SignIn SignUp Modal
 const signUpButton = document.getElementById('signUp');

@@ -1,52 +1,59 @@
 <%#Seccion1: Intro%>
-
-<div class="intro-info">
-	<div class="intbibi">
-		<h1>BiBi</h1>
-	</div>
-	<div class="inttyp">
-		<h1 class="typewrite" data-period="2000" 
-			data-type='[ " vive la experiencia.", " ayuda al planeta.", " economia colaborativa.", " renta local." ]'>
-		</h1>
-	</div>
-</div>
-
-<%#Seccion2: Informacion general%>
-
-	<div class="infexp">
-		<div class="extinfo">
-			<img src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_60/v1635882303/bibi/HOME/Wavy_Buddies_-_Dollar_ausetu.png" alt="">
-			<h4>Ahorra más</h4>
-			<p>Renta < Compra.</p>	
+<div class="wraintbibi" id="wrapper" class="skewed">
+	<div class="intro-info">
+		<div class="intbibtex">
+			<div class="intbiblog">
+				<h1>BiBi</h1>
+				<h2>¡Vive ligero!</h2>
+			</div>
 		</div>
-		<div class="extinfo">
-			<img src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_60/v1635882442/bibi/HOME/Hands_-_Earth_gy6xpp.png" alt="">
-			<h4>Contamina menos</h4>
-			<p>Menos compras, más experiencias.</p>
+		<div class="inttyp">
+			<h2 class="typewrite" data-period="2000" 
+				data-type='[ " Vive la experiencia.", " Ayuda al planeta.", " Renta local.", "Encuentra lo que necesitas."]'>
+			</h2>
 		</div>
-		<div class="extinfo">
-			<img src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_60/v1635882408/bibi/HOME/Dayflow_-_Riding_ebri22.png" alt="">
-			<h4>Vive ligero</h4>
-			<p>Renta solo lo que necesitas.</p>
-		</div>	
 	</div>
-
-<section id="wrapper" class="skewed">
 </div>	
-
-<%#VERIFICAR PORQUE SI QUITO ESTA LINEA SE ELIMINA JAVASCRIPT TYPEWRITE EFFECT%>
-
-<%#Seccion3: Top articulos mas rentados%>
-
-	<div class="comp-title" >
-		<a href="/products"><h2>Articulos</h2></a>
-	</div>
-
+<%#Seccion2: Top articulos mas rentados%>
+<div class="comp-title" >
+	<a href="/products"><h2>Articulos</h2></a>
+</div>
 <div class="conarthom">
-	
 </div>
 
+<%#Seccion3: Indicaciones descarga PWA%>
 
+<div class="comp-title">
+    	<h2>¿Como funciona BiBi?</h2>
+</div>
+<div class="infobibpas">
+	<div class="bibpasder">
+		<div class="pastexpasder">
+			<div class="pastextiteder">
+				<h3 >Registrate</h3>
+				<p class="parbibtex">Ingresa todos los datos necesarios para poder rentar con BiBi.</p>
+				<button class="btnpas" type="submit"><%= link_to "Registrarme", user_session_path, "data-toggle" => "modal", "data-target" => "#signinModal" %></button>
+			</div>
+		</div>
+	</div>
+	<div class="bibpasizq">
+		<div class="pastexpasizq">
+			<div class="pastextiteizq">
+				<h3 >Explora</h3>
+				<p class="parbibtex">Busca por ubicación y filtra el artículo que necesites, envía una solicitud al proveedor y recoge tu artículo.</p>
+				<button class="btnpas" type="submit"><%= link_to "Explorar", products_path %></button>
+			</div>
+		</div>
+	</div>
+	<div class="bibpasder2">
+		<div class="pastexpasder">
+			<div class="pastextiteder">
+				<h3 >Disfruta</h3>
+				<p class="parbibtex">Disfruta del artículo el tiempo que lo necesites.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 <%#Seccion4: Reviews reales%>
 
@@ -91,22 +98,6 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-<%#Seccion5: Indicaciones descarga PWA%>
-
-<div class="comp-title">
-    	<h2>Descargame</h2>
-</div>
-<div class="infodesc">
-	<div class="desctit">
-		<h3>¿Como descargar nuestra PWA?</h3>
-	</div>
-	<div class="descste">
-			<h4>1. Vee a los 3 puntos de google chrome o del navegador que utilizas</h4>
-			<h4>2. Seleccciona descargar en tu homescreen</h4>
-			<h4>3. Disfruta de nuestra PWA y renta tus articulos.</h4>
-		</div>
 </div>
 
 <%#Seccion6: Listas de categorias e ubicaciones%>
