@@ -5,7 +5,10 @@
 <hr>
 <br>
 Nombre:
-<%= current_user.name %>
+<% 
+  nombre = (current_user.name ? current_user.name : "Aún no nos has dicho tu nombre.") 
+%>
+<%= nombre %>
 <br>
 Apellido Paterno:
 <%= current_user.last_name %>
@@ -34,25 +37,31 @@ Apellido Materno:
 <br>
 0 reviews (no conectado)
 <br>
-<% birthday = current_user.birthday %>
-<% birth_month = birthday.month
-  written_month = nil
-  case birth_month
-  when 1 then written_month = "Enero"
-  when 2 then written_month = "Febrero"
-  when 3 then written_month = "Marzo"
-  when 4 then written_month = "Abril"
-  when 5 then written_month = "Mayo"
-  when 6 then written_month = "Junio"
-  when 7 then written_month = "Julio"
-  when 8 then written_month = "Agosto"
-  when 9 then written_month = "Septiembre"
-  when 10 then written_month = "Octubre"
-  when 11 then written_month = "Noviembre"
-  when 12 then written_month = "Diciembre"       
-  end
-%>
-Cumpleaños: <%= "#{birthday.day}/#{written_month}/#{birthday.year}" %>
+<% birthday_value = "" %>
+<% if current_user.birthday != nil %>
+  <% birthday = current_user.birthday %>
+  <% birth_month = birthday.month
+    written_month = nil
+    case birth_month
+    when 1 then written_month = "Enero"
+    when 2 then written_month = "Febrero"
+    when 3 then written_month = "Marzo"
+    when 4 then written_month = "Abril"
+    when 5 then written_month = "Mayo"
+    when 6 then written_month = "Junio"
+    when 7 then written_month = "Julio"
+    when 8 then written_month = "Agosto"
+    when 9 then written_month = "Septiembre"
+    when 10 then written_month = "Octubre"
+    when 11 then written_month = "Noviembre"
+    when 12 then written_month = "Diciembre"       
+    end
+  %>
+  <% birthday_value = "#{birthday.day}/#{written_month}/#{birthday.year}" %>
+<% else %>
+  <% birthday_value = "Aún no nos has dicho que dia naciste" %>
+<% end %>
+Cumpleaños: <%= birthday_value %>
 <br>
 Teléfono: <%= "+#{current_user.bb_coun_try_code} #{current_user.cellphone_number}" %>
 <br>
@@ -68,7 +77,10 @@ Describe un poco de ti:
 <br>
 <hr>
 <br>
-<%= "#{current_user.name} #{current_user.last_name.chars.first}." %>
+<% nombre_y_apellido = "" 
+   nombre_y_apellido = current_user.name != nil ? "#{current_user.name} #{current_user.last_name.chars.first}." : "Aún no has registrado tu nombre y apellidos."
+%>
+<%= nombre_y_apellido %>
 <hr>
 <br>
 Dirección:
