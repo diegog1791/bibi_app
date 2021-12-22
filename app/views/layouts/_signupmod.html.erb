@@ -1,14 +1,14 @@
 <div class="modal" id="signupModal" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
   
-    <div class="container right-panel-active" id="container2">
+    <div class="container" id="container2">
       <div class="form-container sign-up-container">
-        
+        <%# <form action="#"> form was conflicting with simple form and for that reason was removed %>
           <div class="intsignup1">
               <h1>¡Bienvenid@s!</h1>
               <p class="signupslogan" style="opacity: 40%;">Ingresa tus datos y empieza a vivir ligero.</p>
           </div>
           <div class="forinpsig">
-          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), :defaults => { :input_html => { :class => "taginput" } }) do |f| %>
           <%= f.error_notification %>
           <%= f.input :email,
                       placeholder: "Email",
@@ -46,12 +46,12 @@
             <p style="font-size: 12px; margin-top: 10px">Al registrarte estas aceptando <em><a href="/aviso_de_privacidad" style="color:#FFF562">aviso de privacidad </a></em> y nuestros <em><a href="/terminos_de_servicio" style="color:#FFF562">terminos y condiciones.</a></em></p>
           <% end %>
           </div>
-        
+        <%# </form> %>
       </div>
       <div class="form-container sign-in-container">
-        
+        <%# <form action="#"> %>
           <div class="intsignup1">
-            <h1>Iniciar sesión 2</h1>
+            <h1 id="conflict">Iniciar sesión</h1>
             <p class="signupslogan" style="opacity: 40%;">Te estabamos esperando.</p>
           </div>
           <div class="forinpsig">
@@ -90,7 +90,7 @@
             </button>
           </div>
           <% end %>
-        
+        <%# </form> %>
       </div>
       <div class="overlay-container">
         <div class="overlay">
