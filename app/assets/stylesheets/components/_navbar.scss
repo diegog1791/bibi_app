@@ -5,16 +5,15 @@
     top: 0;
     z-index: 5;
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #FFF562;
 }
 
 .logsba {
     display: flex;
     flex-direction: row;
+    height: 100%;
     align-items: center;
-    flex-grow: 2;
-    height: 70px;
 }
 
 .hlogobtn {
@@ -37,6 +36,10 @@
     border-radius: 25px;
     border: transparent;
     width: 100%;
+}
+
+.form-control:focus {
+    background-color: white;
 }
 
 .sbtn {
@@ -63,7 +66,6 @@
 .avatar {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
 }
 
 .avabtn {
@@ -104,25 +106,23 @@
         top: 0;
         z-index: 5;
         width: 100%;
-    }
-    .navbar.scroll {
-        background-color: black;
+        height: 80px;
     }
     .logsba {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: center;
         flex-grow: 2;
     }
     .hlogobtn {
-        width: max-content;
-        height: max-content;
+        width: 70px;
+        height: 70px;
     }
     .sback {
         display: flex;
         background-color: #fefefe;
         border-radius: 25px;
-        width: 500px;
+        width: 450px;
         height: max-content;
         margin-left: 30px;
     }
@@ -150,6 +150,10 @@
         margin-left: 30px;
         flex-grow: 2;
     }
+    .avatar {
+        width: 60px;
+        height: 40px;
+    }
     .avamen {
         background-color: transparent;
         border: none;
@@ -176,8 +180,8 @@
         flex-grow: 2;
     }
     .hlogobtn {
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
     }
     .sback {
         display: flex;
@@ -203,10 +207,13 @@
         color: black;
     }
     .mentog {
-        justify-content: center;
-        margin: auto;
+        justify-content: end;
         flex-grow: 2;
-        padding: 0;
+        padding-right: 5px;
+    }
+    .avatar {
+        width: 50px;
+        height: 50px;
     }
     .avamen {
         background-color: transparent;
@@ -234,8 +241,8 @@
         flex-grow: 2;
     }
     .hlogobtn {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
     }
     .sback {
         display: flex;
@@ -261,9 +268,13 @@
         color: black;
     }
     .mentog {
-        justify-content: center;
-        margin: auto;
+        justify-content: end;
         flex-grow: 2;
+        padding-right: 5px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
     }
     .avamen {
         background-color: transparent;
@@ -293,8 +304,8 @@
         flex-grow: 10;
     }
     .hlogobtn {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .sback {
         display: flex;
@@ -325,6 +336,10 @@
         height: 60px;
         align-items: center;
         flex-grow: 1;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
     }
     .avamen {
         background-color: transparent;

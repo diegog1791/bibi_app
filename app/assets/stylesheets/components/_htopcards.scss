@@ -1,16 +1,21 @@
 .conarthom {
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-bottom: 200px;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.conartsec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    height: 50vh;
+    margin-bottom: 20px;
 }
 
 .art-container1 {
     height: 350px;
     position: relative;
-    width: 723px;
-    padding-left: 30px;
+    width: 50%;
 }
 
 .art-card1 {
@@ -48,8 +53,7 @@
 
 //TOPCARD2
 .art-container2 {
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 50%;
 }
 
 .art-card2 {
@@ -80,8 +84,7 @@
 
 //TOPCARD3
 .art-container3 {
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 50%;
 }
 
 .art-card3 {
