@@ -49,3 +49,17 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
+
+//SignIn SignUp Modal
+// for the second screen
+const signUpButton2 = document.getElementById('signUp2');
+const signInButton2 = document.getElementById('signIn2');
+const container2 = document.getElementById('container2');
+
+signUpButton2.addEventListener('click', () => {
+    container2.classList.add("right-panel-active");
+});
+
+signInButton2.addEventListener('click', () => {
+    container2.classList.remove("right-panel-active");
+});
