@@ -1,42 +1,46 @@
-.intro-info {
-    width: 100%;
-    height: 80vh;
+.wraintbibi {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_fit,h_800/v1639250093/bibi/Inicio.de.sesion/Bibi-back_principal_1-02_lm84bi.png");
+    align-self: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 100%;
 }
 
-.intbibi h1 {
-    font-size: 300px;
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_800/v1639502342/bibi/Inicio.de.sesion/back_3__Mesa_de_trabajo_1_atqyz2.png");
+}
+
+.intbiblog {
+    width: 40%;
+    text-align: center;
+    justify-content: center;
 }
 
 .inttyp {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
+    width: 40%;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.intbibmar {
+    font-size: 100px;
+    margin: 0;
 }
 
 .typewrite {
-    color: #FFF562;
-    margin-left: 35px;
-    font-size: 50px;
-}
-
-.infexp {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.extinfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 50px;
     text-align: center;
+    color: #FFF562;
+    font-size: 30px;
 }
 
 .comp-title {
@@ -46,31 +50,104 @@
     width: 100%;
 }
 
-.infodesc {
+//Información BiBi pasos de como funciona
+.infobibpas {
     display: flex;
     flex-direction: column;
-    height: 900px;
-    justify-content: center;
     align-items: center;
+    height: 1400px;
 }
 
-.desctit {
-    justify-content: center;
+.bibpasder {
+    display: flex;
+    width: 75%;
+    height: 33%;
+    justify-content: end;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_400/v1639507204/bibi/Inicio.de.sesion/Bibi-back_middle_1-01_cgrqw0.png");
 }
 
-.descimg {
+.bibpasder2 {
+    display: flex;
+    width: 75%;
+    height: 33%;
+    justify-content: end;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_400/v1639522744/bibi/Inicio.de.sesion/Bibi-back_middle_1-03_grseqv.png");
+}
+
+.pastexpasder {
     display: flex;
     flex-direction: row;
-    width: max-content;
-    height: 500px;
+    justify-content: center;
+    width: 55%;
 }
 
-.descste {
+.pastextiteder {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: flex-end;
+    text-align: center;
+    width: 70%;
 }
 
+.btnpas {
+    align-self: center;
+    border-radius: 5px;
+    border: 1px solid #FFF562;
+    background-color: #FFF562;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    transition: transform 80ms ease-in;
+    width: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btnpas:active {
+    transform: scale(0.95);
+}
+
+.bibpasizq {
+    display: flex;
+    width: 75%;
+    height: 33%;
+    justify-content: start;
+    align-self: center;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_400/v1639521619/bibi/Inicio.de.sesion/Bibi-back_middle_1-02_nsfpy5.png");
+}
+
+.pastexpasizq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+.pastextiteizq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    text-align: center;
+    width: 70%;
+}
+
+.parbibtex {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+//Categorias y ubicaciones
 .liscatubi {
     display: flex;
     flex-direction: row;
@@ -88,68 +165,292 @@
     padding: 0;
 }
 
-//Medium devices Desktops (≥992px)
-@media screen and (min-width: 992px) {
+//Medium devices Desktops (≥1440px)
+@media screen and (max-width: 1440px) {
+    .wraintbibi {
+        display: flex;
+        align-self: center;
+        justify-content: flex-end;
+        width: 95%;
+        height: 95vh;
+    }
     .intro-info {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .intbibi h1 {
-        font-size: 200px;
-    }
-    .inttyp {
-        display: flex;
-        flex-direction: row;
-        width: 55%;
-    }
-    .typewrite {
-        color: #FFF562;
-    }
-    .infexp {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-        padding: 20px;
-        background-color: #FFF562;
-    }
-    .extinfo {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        width: 100%;
+        height: 90vh;
+        justify-content: center;
+        align-items: end;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_650/v1639502342/bibi/Inicio.de.sesion/back_3__Mesa_de_trabajo_1_atqyz2.png");
+    }
+    .intbiblog {
+        width: 40%;
         text-align: center;
+        justify-content: center;
+    }
+    .inttyp {
+        width: 40%;
+        align-self: flex-end;
+        text-align: center;
+    }
+    .intbibmar {
+        font-size: 100px;
+        margin: 0;
+    }
+    .typewrite {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: #FFF562;
+        font-size: 30px;
     }
     .comp-title {
         text-align: center;
         margin-top: 50px;
         height: 100px;
+        width: 100%;
     }
-    .infodesc {
+    //Información BiBi pasos de como funciona
+    .infobibpas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1400px;
+    }
+    .bibpasder {
+        display: flex;
+        width: 75%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_400/v1639507204/bibi/Inicio.de.sesion/Bibi-back_middle_1-01_cgrqw0.png");
+    }
+    .bibpasder2 {
+        display: flex;
+        width: 75%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_400/v1639522744/bibi/Inicio.de.sesion/Bibi-back_middle_1-03_grseqv.png");
+    }
+    .pastexpasder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 55%;
+    }
+    .pastextiteder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-end;
+        text-align: center;
+        width: 70%;
+    }
+    .btnpas {
+        align-self: center;
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        transition: transform 80ms ease-in;
+        width: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnpas:active {
+        transform: scale(0.95);
+    }
+    .bibpasizq {
+        display: flex;
+        width: 75%;
+        height: 33%;
+        justify-content: start;
+        align-self: center;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_400/v1639521619/bibi/Inicio.de.sesion/Bibi-back_middle_1-02_nsfpy5.png");
+    }
+    .pastexpasizq {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+    .pastextiteizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        text-align: center;
+        width: 80%;
+    }
+    .parbibtex {
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    //Categorias y ubicaciones
+    .liscatubi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #faee4e;
+        padding: 40px 40px 40px 100px;
+    }
+    .liscu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+//Medium devices Desktops (≥992px)
+@media screen and (max-width: 992px) {
+    .wraintbibi {
+        display: flex;
+        align-self: center;
+        justify-content: flex-end;
+        width: 90%;
+        height: 100%;
+    }
+    .intro-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 95vh;
+        align-items: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_750/v1640036435/bibi/Inicio.de.sesion/Bibi-back_principal_2-02_lgatyx.png");
+    }
+    .intbiblog {
+        width: 40%;
+        text-align: center;
+        justify-content: center;
+    }
+    .inttyp {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    .intbibmar {
+        font-size: 100px;
+        margin: 0;
+    }
+    .typewrite {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+    .comp-title {
+        text-align: center;
+        margin-top: 50px;
+        height: 100px;
+        width: 100%;
+    }
+    //Información BiBi pasos de como funciona
+    .infobibpas {
         display: flex;
         flex-direction: column;
         height: 900px;
         justify-content: center;
         align-items: center;
     }
-    .desctit {
-        justify-content: center;
+    .bibpasder {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_250/v1639507204/bibi/Inicio.de.sesion/Bibi-back_middle_1-01_cgrqw0.png");
     }
-    .descimg {
+    .bibpasder2 {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_250/v1639522744/bibi/Inicio.de.sesion/Bibi-back_middle_1-03_grseqv.png");
+    }
+    .pastexpasder {
         display: flex;
         flex-direction: row;
-        width: max-content;
-        height: 500px;
+        justify-content: center;
+        width: 55%;
     }
-    .descste {
+    .pastextiteder {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-content: flex-end;
+        text-align: center;
+        width: 80%;
     }
+    .btnpas {
+        align-self: center;
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        transition: transform 80ms ease-in;
+        width: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnpas:active {
+        transform: scale(0.95);
+    }
+    .bibpasizq {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: start;
+        align-self: center;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_250/v1639521619/bibi/Inicio.de.sesion/Bibi-back_middle_1-02_nsfpy5.png");
+    }
+    .pastexpasizq {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+    .pastextiteizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        text-align: center;
+        width: 80%;
+    }
+    .parbibtex {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    //Categorias y ubicaciones
     .liscatubi {
         display: flex;
         flex-direction: row;
@@ -169,66 +470,139 @@
 
 //Small devices Tablets (≥768px)
 @media screen and (max-width: 768px) {
+    .wraintbibi {
+        display: flex;
+        align-self: center;
+        justify-content: flex-end;
+        width: 90%;
+        height: 100%;
+    }
     .intro-info {
-        width: 100%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .intbibi h1 {
-        font-size: 160px;
-    }
-    .inttyp {
-        display: flex;
-        flex-direction: row;
-    }
-    .typewrite {
-        color: #FFF562;
-        margin: auto;
-        height: 200px;
-    }
-    .infexp {
-        display: flex;
-        flex-direction: row;
         width: 100%;
-        justify-content: space-around;
-        background-color: #FFF562;
-        padding: 20px;
-    }
-    .extinfo {
-        display: flex;
-        flex-direction: column;
+        height: 80vh;
         align-items: center;
         text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_650,w_740/v1640036435/bibi/Inicio.de.sesion/Bibi-back_principal_2-02_lgatyx.png");
+    }
+    .intbiblog {
+        width: 40%;
+        text-align: center;
+        justify-content: center;
+    }
+    .inttyp {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    .intbibmar {
+        font-size: 60px;
+        margin: 0;
+    }
+    .typewrite {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: #FFF562;
+        font-size: 30px;
     }
     .comp-title {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 50px;
         height: 100px;
+        width: 100%;
     }
-    .infodesc {
+    //Información BiBi pasos de como funciona
+    .infobibpas {
         display: flex;
         flex-direction: column;
         height: 900px;
         justify-content: center;
         align-items: center;
     }
-    .desctit {
-        justify-content: center;
+    .bibpasder {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_250/v1639507204/bibi/Inicio.de.sesion/Bibi-back_middle_1-01_cgrqw0.png");
     }
-    .descimg {
+    .bibpasder2 {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_250/v1639522744/bibi/Inicio.de.sesion/Bibi-back_middle_1-03_grseqv.png");
+    }
+    .pastexpasder {
         display: flex;
         flex-direction: row;
-        width: max-content;
-        height: 500px;
+        justify-content: center;
+        width: 55%;
     }
-    .descste {
+    .pastextiteder {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-content: flex-end;
+        text-align: center;
+        width: 80%;
     }
+    .btnpas {
+        align-self: center;
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        transition: transform 80ms ease-in;
+        width: 70%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnpas:active {
+        transform: scale(0.95);
+    }
+    .bibpasizq {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: start;
+        align-self: center;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_250/v1639521619/bibi/Inicio.de.sesion/Bibi-back_middle_1-02_nsfpy5.png");
+    }
+    .pastexpasizq {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+    .pastextiteizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        text-align: center;
+        width: 80%;
+    }
+    .parbibtex {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    //Categorias y ubicaciones
     .liscatubi {
         display: flex;
         flex-direction: row;
@@ -248,72 +622,136 @@
 
 //Small devices Tablets (≥640px)
 @media screen and (max-width: 640px) {
-    .intro-info {
+    .wraintbibi {
+        display: flex;
+        align-self: center;
+        justify-content: flex-end;
         width: 100%;
-        height: 100vh;
+    }
+    .intro-info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        width: 100%;
+        height: 90vh;
         align-items: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_590/v1640036492/bibi/Inicio.de.sesion/Bibi-back_principal_1-02_klbz4e.png");
     }
-    .intbibi h1 {
-        font-size: 150px;
-    }
-    .intbibi {
-        height: 90px;
-        margin-top: 25px;
+    .intbiblog {
+        width: 40%;
+        text-align: center;
+        justify-content: center;
     }
     .inttyp {
-        display: flex;
-        flex-direction: row;
-        width: 75%;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    .intbibmar {
+        font-size: 100px;
+        margin: 0;
     }
     .typewrite {
-        color: #FFF562;
-        margin: auto;
-        font-size: xx-large;
-    }
-    .infexp {
-        display: flex;
-        flex-direction: row;
         width: 100%;
-        justify-content: space-around;
-        background-color: #FFF562;
-        padding: 10px;
-    }
-    .extinfo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
+        height: 50px;
         text-align: center;
+        color: #FFF562;
+        font-size: 30px;
     }
     .comp-title {
-        margin-top: 40px;
         text-align: center;
+        margin-top: 50px;
         height: 100px;
+        width: 100%;
     }
-    .infodesc {
+    //Información BiBi pasos de como funciona
+    .infobibpas {
         display: flex;
         flex-direction: column;
-        height: 800px;
-        justify-content: center;
         align-items: center;
+        height: 800px;
     }
-    .desctit {
-        justify-content: center;
+    .bibpasder {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_200/v1639507204/bibi/Inicio.de.sesion/Bibi-back_middle_1-01_cgrqw0.png");
     }
-    .descimg {
+    .bibpasder2 {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        justify-content: end;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_200/v1639522744/bibi/Inicio.de.sesion/Bibi-back_middle_1-03_grseqv.png");
+    }
+    .pastexpasder {
         display: flex;
         flex-direction: row;
-        width: max-content;
-        height: 500px;
+        justify-content: center;
+        width: 55%;
     }
-    .descste {
+    .pastextiteder {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-content: flex-end;
+        text-align: center;
+        width: 70%;
     }
+    .btnpas {
+        align-self: center;
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        transition: transform 80ms ease-in;
+        width: 70%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnpas:active {
+        transform: scale(0.95);
+    }
+    .bibpasizq {
+        display: flex;
+        width: 90%;
+        height: 33%;
+        align-self: center;
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_200/v1639521619/bibi/Inicio.de.sesion/Bibi-back_middle_1-02_nsfpy5.png");
+    }
+    .pastexpasizq {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }
+    .pastextiteizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        text-align: center;
+        width: 90%;
+    }
+    .parbibtex {
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    //Categorias y ubicaciones
     .liscatubi {
         display: flex;
         flex-direction: column;
@@ -331,70 +769,139 @@
     }
 }
 
-//Small devices Tablets (≥480px)
-@media screen and (max-width: 480px) {
-    .intro-info {
+//Small devices Tablets (≥425px)
+@media screen and (max-width: 425px) {
+    .wraintbibi {
+        display: flex;
+        align-self: center;
+        justify-content: flex-end;
         width: 100%;
-        height: 100vh;
     }
-    .intbibi h1 {
-        font-size: 60px;
+    .intro-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 87vh;
+        align-items: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_350/v1639250093/bibi/Inicio.de.sesion/Bibi-back_principal_1-03_spzi1j.png");
     }
-    .intbibi {
-        height: max-content;
+    .intbiblog {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 23px;
     }
     .inttyp {
         width: 100%;
-        height: max-content;
-        justify-content: center;
+        align-self: center;
+        text-align: center;
+    }
+    .intbibmar {
+        font-size: 60px;
+        margin: 0;
     }
     .typewrite {
-        color: #FFF562;
-        height: 50vh;
-        font-size: x-large;
-    }
-    .infexp {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        justify-content: center;
-        background-color: #FFF562;
-        padding: 15px;
-    }
-    .extinfo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        height: 40px;
         text-align: center;
-        margin: 15px;
+        color: #FFF562;
+        font-size: 24px;
     }
     .comp-title {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 50px;
         height: 100px;
+        width: 100%;
     }
-    .infodesc {
+    //Información BiBi pasos de como funciona
+    .infobibpas {
         display: flex;
         flex-direction: column;
-        height: 900px;
-        justify-content: center;
         align-items: center;
+        height: 900px;
     }
-    .desctit {
-        justify-content: center;
-    }
-    .descimg {
-        display: flex;
-        flex-direction: row;
-        width: max-content;
-        height: 500px;
-    }
-    .descste {
+    .bibpasder {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        width: 100%;
+        height: 33%;
+        margin: 15px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_100/v1639507204/bibi/Inicio.de.sesion/Bibi-back_middle_1-01_cgrqw0.png");
     }
+    .bibpasder2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 33%;
+        margin: 15px;
+        padding-bottom: 60px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_100/v1639522744/bibi/Inicio.de.sesion/Bibi-back_middle_1-03_grseqv.png");
+    }
+    .pastexpasder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .pastextiteder {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        width: 90%;
+    }
+    .btnpas {
+        align-self: center;
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        transition: transform 80ms ease-in;
+        width: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnpas:active {
+        transform: scale(0.95);
+    }
+    .bibpasizq {
+        display: flex;
+        width: 100%;
+        height: 33%;
+        margin: 15px;
+        align-self: center;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_100/v1639521619/bibi/Inicio.de.sesion/Bibi-back_middle_1-02_nsfpy5.png");
+    }
+    .pastexpasizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+    }
+    .pastextiteizq {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        width: 90%;
+    }
+    .parbibtex {
+        margin: 2px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    //Categorias y ubicaciones
     .liscatubi {
         display: flex;
         flex-direction: column;
