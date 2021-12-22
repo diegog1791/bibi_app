@@ -56,7 +56,7 @@ signInButton.addEventListener('click', () => {
 const signUpButton2 = document.getElementById('signUp2');
 const signInButton2 = document.getElementById('signIn2');
 const container2 = document.getElementById('container2');
-const conflict = document.getElementById('conflict');
+const conflict = document.getElementById('conflict'); // <= this is a temporary fix to correct the style issue, because both headers are overlapping.
 
 signUpButton2.addEventListener('click', () => {
   container2.classList.add("right-panel-active");

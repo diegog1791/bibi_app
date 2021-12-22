@@ -2,74 +2,32 @@
 <br>
 ************PERFIL***********
 <br>
+
 <hr>
 <br>
 Nombre:
-<% 
-  nombre = (current_user.name ? current_user.name : "Aún no nos has dicho tu nombre.") 
-%>
-<%= nombre %>
+<%= @nombre %>
 <br>
 Apellido Paterno:
-<%= current_user.last_name %>
+<%= @apellido_paterno %>
 <br>
 Apellido Materno:
-<%= current_user.mothers_last_name %>
+<%= @apellido_materno %>
 <br>
-<% month_number = current_user.created_at.month 
-  month = nil
-  case month_number
-  when 1 then month = "Enero"
-  when 2 then month = "Febrero"
-  when 3 then month = "Marzo"
-  when 4 then month = "Abril"
-  when 5 then month = "Mayo"
-  when 6 then month = "Junio"
-  when 7 then month = "Julio"
-  when 8 then month = "Agosto"
-  when 9 then month = "Septiembre"
-  when 10 then month = "Octubre"
-  when 11 then month = "Noviembre"
-  when 12 then month = "Diciembre"       
-  end
-%>
-<%= current_user.created_at.strftime("Te uniste el %d de #{month} de %Y") %>
+<%= @fecha_de_union_a_bibi %>
 <br>
 0 reviews (no conectado)
 <br>
-<% birthday_value = "" %>
-<% if current_user.birthday != nil %>
-  <% birthday = current_user.birthday %>
-  <% birth_month = birthday.month
-    written_month = nil
-    case birth_month
-    when 1 then written_month = "Enero"
-    when 2 then written_month = "Febrero"
-    when 3 then written_month = "Marzo"
-    when 4 then written_month = "Abril"
-    when 5 then written_month = "Mayo"
-    when 6 then written_month = "Junio"
-    when 7 then written_month = "Julio"
-    when 8 then written_month = "Agosto"
-    when 9 then written_month = "Septiembre"
-    when 10 then written_month = "Octubre"
-    when 11 then written_month = "Noviembre"
-    when 12 then written_month = "Diciembre"       
-    end
-  %>
-  <% birthday_value = "#{birthday.day}/#{written_month}/#{birthday.year}" %>
-<% else %>
-  <% birthday_value = "Aún no nos has dicho que dia naciste" %>
-<% end %>
-Cumpleaños: <%= birthday_value %>
+Cumpleaños:
+<%= @cumpleanos %>
 <br>
-Teléfono: <%= "+#{current_user.bb_coun_try_code} #{current_user.cellphone_number}" %>
+Teléfono: <%= @telefono %>
 <br>
 Dirección:
-<%= "#{current_user.drop_off_location}, Col. #{current_user.neighborhood}, C.P.: #{current_user.zip_code}, #{current_user.state}" %>
+<%= @direccion_completa %>
 <br>
 Describe un poco de ti:
-<%= current_user.about %>
+<%= @acerca_de_mi %>
 <br>
 <hr>
 <br>
@@ -77,29 +35,27 @@ Describe un poco de ti:
 <br>
 <hr>
 <br>
-<% nombre_y_apellido = "" 
-   nombre_y_apellido = current_user.name != nil ? "#{current_user.name} #{current_user.last_name.chars.first}." : "Aún no has registrado tu nombre y apellidos."
-%>
-<%= nombre_y_apellido %>
 <hr>
+Nombre de cuenta:
+<%= @nombre_cuenta %>
 <br>
 Dirección:
-<%= current_user.drop_off_location %>
+<%= @direccion %>
 <br>
 Colonia:
-<%= current_user.neighborhood %>
+<%= @colonia %>
 <br>
 C.P.:
-<%= current_user.zip_code %>
+<%= @codigo_postal %>
 <br>
 Ciudad:
-<%= current_user.city %>
+<%= @ciudad %>
 <br>
 Estado:
-<%= current_user.state %>
+<%= @estado %>
 <br>
 País:
-<%= current_user.bb_coun_try %>
+<%= @pais %>
 <br>
 Tarjeta de credito (pagos) // no conectado
 <br>
@@ -108,7 +64,7 @@ No. cuenta (depósitos) // no conectado
 CLABE (depósitos) // no conectado
 <br>
 RFC: 
-<%= current_user.rfc %>
+<%= @rfc %>
 <br>
 <br>
 <br>
