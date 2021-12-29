@@ -18,11 +18,11 @@ require("channels")
 
 // Master DOManipulator v2 ------------------------------------------------------------
 const items = document.querySelectorAll('.item'),
-  controls = document.querySelectorAll('.control'),
-  headerItems = document.querySelectorAll('.item-header'),
-  descriptionItems = document.querySelectorAll('.item-description'),
-  activeDelay = .76,
-  interval = 5000;
+    controls = document.querySelectorAll('.control'),
+    headerItems = document.querySelectorAll('.item-header'),
+    descriptionItems = document.querySelectorAll('.item-description'),
+    activeDelay = .76,
+    interval = 5000;
 
 let current = 0;
 
@@ -34,7 +34,7 @@ let current = 0;
 
 //MODAL
 $('#myModal').on('shown.bs.modal', function() {
-  $('#myInput').trigger('focus')
+    $('#myInput').trigger('focus')
 });
 
 
@@ -44,14 +44,14 @@ const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
-  container.classList.add("right-panel-active");
+    container.classList.add("right-panel-active");
 });
 
 signInButton.addEventListener('click', () => {
-  container.classList.remove("right-panel-active");
+    container.classList.remove("right-panel-active");
 });
 
-//SignIn SignUp Modal
+/*SignIn SignUp Modal
 // for the second screen
 const signUpButton2 = document.getElementById('signUp2');
 const signInButton2 = document.getElementById('signIn2');
@@ -59,11 +59,11 @@ const container2 = document.getElementById('container2');
 const conflict = document.getElementById('conflict'); // <= this is a temporary fix to correct the style issue, because both headers are overlapping.
 
 signUpButton2.addEventListener('click', () => {
-  container2.classList.add("right-panel-active");
-  conflict.classList.add('d-none');
+    container2.classList.add("right-panel-active");
+    conflict.classList.add('d-none');
 });
 
 signInButton2.addEventListener('click', () => {
-  container2.classList.remove("right-panel-active");
-  conflict.classList.remove("d-none");
-});
+    container2.classList.remove("right-panel-active");
+    conflict.classList.remove("d-none");
+});*/

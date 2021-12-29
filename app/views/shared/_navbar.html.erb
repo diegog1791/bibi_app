@@ -27,11 +27,9 @@
           <li class="nav-item dropdown">
             <%= image_tag "https://res.cloudinary.com/dfy5vakwb/image/upload/v1638230967/bibi/shared/Benzene_Ring_hfy45y.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <%= link_to "Iniciar", user_session_path, class: "dropdown-item", "data-toggle" => "modal", "data-target" => "#signinModal" %>
-              <%= link_to "test", user_session_path, class: "dropdown-item", "data-toggle" => "modal", "data-target" => "#signupModal" %>
+              <%= link_to "Iniciar", user_session_path, class: "dropdown-item", "data-toggle" => "modal", "data-target" => "#signupModal" %>
               <%= link_to "Arrendador", arrendador_path, class: "dropdown-item"%>
               <%= link_to "Arrendatario", arrendatario_path, class: "dropdown-item"%>
-
             </div>
     <%end%>
   </div>
