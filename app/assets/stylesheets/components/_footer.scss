@@ -8,7 +8,7 @@
 .gen-infofo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .info-sect {
@@ -34,7 +34,7 @@
     .gen-infofo {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .info-sect {
         text-align: right;
