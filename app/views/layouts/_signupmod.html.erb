@@ -67,9 +67,9 @@
                           placeholder: "Contraseña",
                           required: false,
                           input_html: { autocomplete: "current-password" } %>
-
-              <a href="#"><p style="font-size: 12px; text-align: end">¿Olvidaste tu contraseña?</p></a>
-
+              <a href="#">
+                <p style="font-size: 12px; text-align: end">¿Olvidaste tu contraseña?</p>
+              </a>
               <%= f.input :remember_me,
                           :input_html => { :class => 'remmebtn' },
                           label: 'Recordar contraseña' ,
