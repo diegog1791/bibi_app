@@ -1,9 +1,131 @@
-.cont-gen {
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
+.congeninf {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 60px 0;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_500/v1639174699/bibi/Inicio.de.sesion/back_3_-03_gm5wfp.png");
 }
 
-.info-ap {
-  width: 70%;
+.conintinfo {
+    width: 80%;
+    height: 100%;
+}
+
+.subtitinf {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+//Desktops devices Desktops (≥1440px)
+@media screen and (max-width: 1440px) {
+    .congeninf {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: 60px 0;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_500/v1639174699/bibi/Inicio.de.sesion/back_3_-03_gm5wfp.png");
+    }
+    .conintinfo {
+        width: 80%;
+        height: 100%;
+    }
+    .subtitinf {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+//Medium devices Tablets/Desktops (≥992px)
+@media screen and (max-width: 992px) {
+    .congeninf {
+        display: flex;
+        height: 100%;
+        margin: 50px 0;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_900/v1639174699/bibi/Inicio.de.sesion/back_3_-03_gm5wfp.png");
+    }
+    .conintinfo {
+        width: 80%;
+        height: 100%;
+        margin-right: 5%;
+    }
+    .subtitinf {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+//Medium devices Tablets (≥768px)
+@media screen and (max-width: 768px) {
+    .congeninf {
+        display: flex;
+        height: 100%;
+        margin: 50px 0;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_700/v1639174699/bibi/Inicio.de.sesion/back_3_-03_gm5wfp.png");
+    }
+    .conintinfo {
+        width: 80%;
+        height: 100%;
+        margin-right: 5%;
+    }
+    .subtitinf {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+//Small devices Mobiles (≥640px)
+@media screen and (max-width: 640px) {
+    .congeninf {
+        display: flex;
+        height: 100%;
+        margin: 50px 0;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_500/v1639174699/bibi/Inicio.de.sesion/back_3_-03_gm5wfp.png");
+    }
+    .conintinfo {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+    .subtitinf {
+        font-size: 22px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+//Extra Small devices Mobiles (≥480px)
+@media screen and (max-width: 480px) {
+    .congeninf {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 30px 0;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1639174699/bibi/Inicio.de.sesion/back_3_-03_gm5wfp.png");
+    }
+    .conintinfo {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        text-align: right;
+    }
+    .subtitinf {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
 }

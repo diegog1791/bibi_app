@@ -26,6 +26,8 @@
 //Medium devices Desktops (≥992px)
 @media screen and (max-width: 992px) {
     .footer {
+        bottom: 0;
+        width: 100%;
         background-color: #FFF562;
         padding: 40px;
     }
@@ -48,6 +50,8 @@
 //Medium devices Desktops (≥768px)
 @media screen and (max-width: 768px) {
     .footer {
+        bottom: 0;
+        width: 100%;
         background-color: #FFF562;
         padding: 10px;
     }
@@ -70,6 +74,8 @@
 //Medium devices Desktops (≥640)
 @media screen and (max-width: 640px) {
     .footer {
+        bottom: 0;
+        width: 100%;
         background-color: #FFF562;
         padding: 30px;
     }
@@ -91,7 +97,7 @@
 //Small devices Tablets (≥480px)
 @media screen and (max-width: 480px) {
     .footer {
-        margin: 0;
+        bottom: 0;
         background-color: #FFF562;
         padding: 30px;
     }
