@@ -64,7 +64,7 @@
 }
 
 .avatar {
-    width: 40px;
+    width: 45px;
     height: 40px;
 }
 
@@ -151,7 +151,7 @@
         flex-grow: 2;
     }
     .avatar {
-        width: 60px;
+        width: 45px;
         height: 40px;
     }
     .avamen {
@@ -170,26 +170,22 @@
         z-index: 5;
         width: 100%;
     }
-    .navbar.scroll {
-        background-color: black;
-    }
     .logsba {
         display: flex;
         flex-direction: row;
         align-items: center;
-        flex-grow: 2;
+        width: 400px;
     }
     .hlogobtn {
         width: 60px;
         height: 60px;
     }
     .sback {
-        display: flex;
         background-color: #fefefe;
         border-radius: 25px;
-        width: 500px;
+        width: 100px;
         height: max-content;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .form-control {
         background-color: #fefefe;
@@ -212,8 +208,9 @@
         padding-right: 5px;
     }
     .avatar {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 40px;
+        margin-right: 10px;
     }
     .avamen {
         background-color: transparent;
@@ -273,7 +270,7 @@
         padding-right: 5px;
     }
     .avatar {
-        width: 40px;
+        width: 45px;
         height: 40px;
     }
     .avamen {
@@ -338,7 +335,7 @@
         flex-grow: 1;
     }
     .avatar {
-        width: 40px;
+        width: 45px;
         height: 40px;
     }
     .avamen {
