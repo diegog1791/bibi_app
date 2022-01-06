@@ -1,0 +1,861 @@
+ .conpergen {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: 100%;
+     background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_800/v1641505169/bibi/HOME/8401_ay9ftn.jpg");
+     background-repeat: no-repeat;
+     background-position: bottom left;
+ }
+ 
+ .conintper {
+     width: 100%;
+ }
+ 
+ .coninfper {
+     display: flex;
+     flex-direction: row;
+     margin: 0 10px 30px 10px;
+ }
+ 
+ //Seccion: Perfil
+ .coninfper1 {
+     display: flex;
+     flex-direction: column;
+     width: 40%;
+ }
+ 
+ .conizqinfper {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     text-align: center;
+     padding: 15px;
+     background-color: #F5F5F5;
+     border-radius: 10px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .conperava {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .perava {
+     align-self: center;
+     width: 120px;
+     height: 120px;
+     margin: 0 10px 10px 10px;
+     border-radius: 50%;
+     background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg");
+ }
+ 
+ .connomciu {
+     width: 100%;
+     margin-bottom: 10px;
+ }
+ 
+ .conizqintper {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 10px;
+ }
+ 
+ .pernorevcaluni {
+     display: flex;
+     flex-direction: column;
+     width: 33%;
+     margin: 5px;
+     padding: 0 10px 5px 10px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .conperdes {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     word-wrap: break-word;
+     max-height: 150px;
+ }
+ 
+ //Seccion: Información personal
+ .con2per {
+     display: flex;
+     flex-direction: column;
+     width: 58%;
+     margin-left: auto;
+ }
+ 
+ .coninfper2 {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .conderinfper {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     text-align: start;
+     padding: 15px;
+     background-color: #F5F5F5;
+     border-radius: 10px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .conderarr {
+     display: flex;
+     flex-direction: column;
+     text-align: start;
+ }
+ 
+ //Seccion: Información pagos
+ .coninfper3 {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .concueper {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     text-align: start;
+     padding: 15px;
+     background-color: #F5F5F5;
+     border-radius: 10px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ //Sección: Texto general
+ .contitper {
+     font-size: 36px;
+     text-align: center;
+     margin: 15px 0 5px 0;
+ }
+ 
+ .subtitper {
+     font-size: 24px;
+     margin-top: 10px;
+     margin-bottom: 5px;
+ }
+ 
+ .texinfintper {
+     font-size: 20px;
+     margin-left: 5px;
+ }
+ 
+ .conbtnedi {
+     display: flex;
+     justify-content: center;
+     margin-top: 10px;
+ }
+ 
+ .edibtntex {
+     color: #e6d708;
+     font-size: 22px;
+     font-weight: 700;
+     padding: 5px;
+ }
+ 
+ //Desktops devices Desktops (≥1440px)
+ @media screen and (max-width: 1440px) {
+     .conpergen {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         height: 100%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_300/v1641505169/bibi/HOME/8401_ay9ftn.jpg");
+         background-repeat: no-repeat;
+         background-position: bottom left;
+     }
+     .conintper {
+         width: 100%;
+     }
+     .coninfper {
+         display: flex;
+         flex-direction: row;
+         margin: 0 10px 30px 10px;
+     }
+     //Seccion: Perfil
+     .coninfper1 {
+         display: flex;
+         flex-direction: column;
+         width: 40%;
+     }
+     .conizqinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: center;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperava {
+         display: flex;
+         flex-direction: column;
+     }
+     .perava {
+         align-self: center;
+         width: 120px;
+         height: 120px;
+         margin: 0 10px 10px 10px;
+         border-radius: 50%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg");
+     }
+     .connomciu {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .conizqintper {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .pernorevcaluni {
+         display: flex;
+         flex-direction: column;
+         width: 33%;
+         margin: 5px;
+         padding: 0 10px 5px 10px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperdes {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         word-wrap: break-word;
+         max-height: 150px;
+     }
+     //Seccion: Información personal
+     .con2per {
+         display: flex;
+         flex-direction: column;
+         width: 58%;
+         margin-left: auto;
+     }
+     .coninfper2 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conderinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conderarr {
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+     }
+     //Seccion: Información pagos
+     .coninfper3 {
+         display: flex;
+         flex-direction: column;
+     }
+     .concueper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .contitper {
+         font-size: 18px;
+         text-align: center;
+         margin: 15px 0 5px 0;
+     }
+     .subtitper {
+         font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 5px;
+     }
+     .texinfintper {
+         font-size: 12px;
+         margin-left: 5px;
+     }
+     .conbtnedi {
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .edibtntex {
+         color: #e6d708;
+         font-size: 14px;
+         font-weight: 700;
+         padding: 5px;
+     }
+ }
+ 
+ //Medium devices Tablets/Desktops (≥992px)
+ @media screen and (max-width: 992px) {
+     .conpergen {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         height: 100%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_200/v1641505169/bibi/HOME/8401_ay9ftn.jpg");
+         background-repeat: no-repeat;
+         background-position: bottom left;
+     }
+     .conintper {
+         width: 100%;
+     }
+     .coninfper {
+         display: flex;
+         flex-direction: column;
+         margin: 0 10px 30px 10px;
+     }
+     //Seccion: Perfil
+     .coninfper1 {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .conizqinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: center;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperava {
+         display: flex;
+         flex-direction: column;
+     }
+     .perava {
+         align-self: center;
+         width: 80px;
+         height: 80px;
+         margin: 0 10px 10px 10px;
+         border-radius: 50%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg");
+     }
+     .connomciu {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .conizqintper {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .pernorevcaluni {
+         display: flex;
+         flex-direction: column;
+         width: 33%;
+         margin: 5px;
+         padding: 0 10px 5px 10px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperdes {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         word-wrap: break-word;
+         max-height: 150px;
+     }
+     //Seccion: Información personal
+     .con2per {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .coninfper2 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conderinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conderarr {
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+     }
+     //Seccion: Información pagos
+     .coninfper3 {
+         display: flex;
+         flex-direction: column;
+     }
+     .concueper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .contitper {
+         font-size: 18px;
+         text-align: center;
+         margin: 15px 0 5px 0;
+     }
+     .subtitper {
+         font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 5px;
+     }
+     .texinfintper {
+         font-size: 12px;
+         margin-left: 5px;
+     }
+     .conbtnedi {
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .edibtntex {
+         color: #e6d708;
+         font-size: 14px;
+         font-weight: 700;
+         padding: 5px;
+     }
+ }
+ 
+ //Medium devices Tablets (≥768px)
+ @media screen and (max-width: 768px) {
+     .conpergen {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         height: 100%;
+         background-image: url("");
+         background-repeat: no-repeat;
+         background-position: bottom left;
+     }
+     .conintper {
+         width: 100%;
+     }
+     .coninfper {
+         display: flex;
+         flex-direction: column;
+         margin: 0 10px 30px 10px;
+     }
+     //Seccion: Perfil
+     .coninfper1 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conizqinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: center;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperava {
+         display: flex;
+         flex-direction: column;
+     }
+     .perava {
+         align-self: center;
+         width: 80px;
+         height: 80px;
+         margin: 0 10px 10px 10px;
+         border-radius: 50%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg");
+     }
+     .connomciu {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .conizqintper {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .pernorevcaluni {
+         display: flex;
+         flex-direction: column;
+         width: 33%;
+         margin: 5px;
+         padding: 0 10px 5px 10px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperdes {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         word-wrap: break-word;
+         max-height: 150px;
+     }
+     //Seccion: Información personal
+     .con2per {
+         display: flex;
+         flex-direction: column;
+     }
+     .coninfper2 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conderinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conderarr {
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+     }
+     //Seccion: Información pagos
+     .coninfper3 {
+         display: flex;
+         flex-direction: column;
+     }
+     .concueper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .contitper {
+         font-size: 18px;
+         text-align: center;
+         margin: 15px 0 5px 0;
+     }
+     .subtitper {
+         font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 5px;
+     }
+     .texinfintper {
+         font-size: 12px;
+         margin-left: 5px;
+     }
+     .conbtnedi {
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .edibtntex {
+         color: #e6d708;
+         font-size: 14px;
+         font-weight: 700;
+         padding: 5px;
+     }
+ }
+ 
+ //Small devices Mobiles (≥640px)
+ @media screen and (max-width: 640px) {
+     .conpergen {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .conintper {
+         width: 100%;
+     }
+     .coninfper {
+         display: flex;
+         flex-direction: column;
+         margin: 0 10px 30px 10px;
+     }
+     //Seccion: Perfil
+     .coninfper1 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conizqinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: center;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperava {
+         display: flex;
+         flex-direction: column;
+     }
+     .perava {
+         align-self: center;
+         width: 80px;
+         height: 80px;
+         margin: 0 10px 10px 10px;
+         border-radius: 50%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg");
+     }
+     .connomciu {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .conizqintper {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .pernorevcaluni {
+         display: flex;
+         flex-direction: column;
+         width: 33%;
+         margin: 5px;
+         padding: 0 10px 5px 10px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperdes {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         word-wrap: break-word;
+         max-height: 150px;
+     }
+     //Seccion: Información personal
+     .con2per {
+         display: flex;
+         flex-direction: column;
+     }
+     .coninfper2 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conderinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conderarr {
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+     }
+     //Seccion: Información pagos
+     .coninfper3 {
+         display: flex;
+         flex-direction: column;
+     }
+     .concueper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .contitper {
+         font-size: 18px;
+         text-align: center;
+         margin: 15px 0 5px 0;
+     }
+     .subtitper {
+         font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 5px;
+     }
+     .texinfintper {
+         font-size: 12px;
+         margin-left: 5px;
+     }
+     .conbtnedi {
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .edibtntex {
+         color: #e6d708;
+         font-size: 14px;
+         font-weight: 700;
+         padding: 5px;
+     }
+ }
+ 
+ //Extra Small devices Mobiles (≥480px)
+ @media screen and (max-width: 480px) {
+     .conpergen {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+     .conintper {
+         width: 100%;
+     }
+     .coninfper {
+         display: flex;
+         flex-direction: column;
+         margin: 0 10px 30px 10px;
+     }
+     //Seccion: Perfil
+     .coninfper1 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conizqinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: center;
+         padding: 20px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperava {
+         display: flex;
+         flex-direction: column;
+     }
+     .perava {
+         align-self: center;
+         width: 80px;
+         height: 80px;
+         margin: 0 10px 10px 10px;
+         border-radius: 50%;
+         background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/v1631294724/bibi/_MG_0046_p8vijw.jpg");
+     }
+     .connomciu {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .conizqintper {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .pernorev {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin: 5px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .pernocal {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin: 5px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .pernouni {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin: 5px;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conperdes {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         word-wrap: break-word;
+         max-height: 150px;
+     }
+     //Seccion: Información personal
+     .con2per {
+         display: flex;
+         flex-direction: column;
+     }
+     .coninfper2 {
+         display: flex;
+         flex-direction: column;
+     }
+     .conderinfper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .conderarr {
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+     }
+     //Seccion: Información pagos
+     .coninfper3 {
+         display: flex;
+         flex-direction: column;
+     }
+     .concueper {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         text-align: start;
+         padding: 15px;
+         background-color: #F5F5F5;
+         border-radius: 10px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .contitper {
+         font-size: 18px;
+         text-align: center;
+         margin: 15px 0 5px 0;
+     }
+     .subtitper {
+         font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 5px;
+     }
+     .texinfintper {
+         font-size: 12px;
+         margin-left: 5px;
+     }
+     .conbtnedi {
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+     }
+     .edibtntex {
+         color: #e6d708;
+         font-size: 14px;
+         font-weight: 700;
+         padding: 5px;
+     }
+ }
