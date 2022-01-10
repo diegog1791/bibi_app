@@ -6,7 +6,7 @@
 		</div>
 		<div class="inttyp">
 			<h2 class="typewrite" data-period="2000" 
-				data-type='[ " Vive la experiencia.", " Ayuda al planeta.", " Renta local.", "Encuentra lo que necesitas."]'>
+			data-type='[ "Encuentra lo que necesitas.", " Renta tu equipo para la montaña.", " Renta local.", " Vive la experiencia.", "Apoya la economia colaborativa."]'>
 			</h2>
 			<h4>¡Vive ligero!</h4>
 		</div>
@@ -16,48 +16,48 @@
 		
 <%#Seccion2: Top articulos mas rentados%>
 <div class="comp-title" >
-	<a href=""><h2>Articulos</h2></a>
+	<h2>Artículos</h2>
 </div>
-<div class="conarthom">
-	<div class="conartsec">
-		<div class="artcontainer1">
-			<div class="artcard1">
-				<a href="" >
-				<h2>Drones</h2>
-				<div class="artinf">
-					<h3>DJI, Karma, Parrot</h3>
-					<p>Encuentsaddsadsadra lo que que necesites más.</p>
-				</div>
-				<div class="artprec">
-					<p>Desde&nbsp;</p><h3><strong> $1,000.00 </strong></h3><p>&nbsp;/día</p>
-				</div>
-					<h3>(540)</h3>
-			</div>
-					<div class="artimg1">
-						<img src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_487/v1630986976/bibi/2cd43b_dc2398af0a794017af2dc62c241543e8_mv2_bbulej.png">
-					</div>
-				</a>
+<div class="homprodcatcon"> <%#Index Products Card Container%>
+	<div class="homcardcat"> <%#Index Cards Products%>
+  	<a href=""> <%#Top Image Products%>
+  	<div class="hcardimg1">
 		</div>
-		<div class="artcontainer2">
-			<div class="artcard2">
-				<a href="">	
-				<h2>Camaras</h2>
-				<div class="artinf2">
-					<h3>DJI, Karma, Parrot</h3>
-					<p>Encuentra lo que que necesitesnecesitesnecesitesnecesitesnecesitesnecesitesnecesitesnecesitesnecesites
-				 y más.</p>
-				</div>
-				<div class="artprec2">
-					<p>Desde&nbsp;</p><h3><strong> $1,000.00 </strong></h3><p>&nbsp;/día</p>
-				</div>
-					<h3>(540)</h3>
-				<div class="artimg2">
-					<img src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_300/v1630986976/bibi/2cd43b_c94992d38ed142658d4abbe47f43b344_mv2_jaca3z.png">
-				</div>
-			</div>
-			</a>
-		</div>
+   	<div class="catitprod"> <%#Card Title Products%>
+      <h2 style="font-size:24px;text-align: center">Casas de campaña</h2>
+  	</div>
+		</a>
 	</div>
+	<div class="homcardcat"> <%#Index Cards Products%>
+  	<a href=""> <%#Top Image Products%>
+  	<div class="hcardimg2">
+		</div>
+   	<div class="catitprod"> <%#Card Title Products%>
+      <h2 style="font-size:24px; text-align: center">Equipo montañismo</h2>
+  	</div>
+		</a>
+	</div>
+	<div class="homcardcat"> <%#Index Cards Products%>
+  	<a href=""> <%#Top Image Products%>
+  	<div class="hcardimg3">
+		</div>
+   	<div class="catitprod"> <%#Card Title Products%>
+      <h2 style="font-size:24px;text-align: center">Camaras</h2>
+  	</div>
+		</a>
+	</div>
+	<div class="homcardcat"> <%#Index Cards Products%>
+  	<a href=""> <%#Top Image Products%>
+  	<div class="hcardimg4">
+		</div>
+   	<div class="catitprod"> <%#Card Title Products%>
+      <h2 style="font-size:24px;text-align: center">Drones</h2>
+  	</div>
+		</a>
+	</div>
+	
+	
+	
 </div>
 
 
@@ -72,7 +72,7 @@
 			<div class="pastextiteder">
 				<h3 class="pastextit">Registrate</h3>
 				<p class="parbibtex">Ingresa todos los datos necesarios para poder rentar con BiBi.</p>
-				<button class="btnpas" type="submit"><%= link_to "Registrarme", user_session_path, "data-toggle" => "modal", "data-target" => "#signupModal" %></button>
+				<button class="btnpas" ><%= link_to "Registrarme", user_session_path, "data-toggle" => "modal", "data-target" => "#signupModal" %></button>
 			</div>
 		</div>
 	</div>
@@ -81,7 +81,7 @@
 			<div class="pastextiteizq">
 				<h3 class="pastextit" >Explora</h3>
 				<p class="parbibtex">Busca tu artículo por ubicación o categoria.</p>
-				<button class="btnpas" type="submit"><%= link_to "Explorar", products_path %></button>
+				<button class="btnpas" ><%= link_to "Explorar", products_path %></button>
 			</div>
 		</div>
 	</div>
@@ -96,15 +96,6 @@
 </div>
 
 <%#Seccion4: Reviews reales%>
-<div class="comp-title">
-  <h2>¿Interesados en BiBi?</h2>
-</div>
-<div class="arrconinf">
-
-</div>
-
-
-<%#Seccion5: Reviews reales%>
 
 <div class="comp-title">
   <h2>Reseñas</h2>
@@ -147,6 +138,54 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<%#Seccion5: Formulario proveedores%>
+
+<div class="comp-title">
+  <h2>Unete en BiBi</h2>
+</div>
+<div class="conarrfor">
+	<div class="conizqarrfor">
+		<div class="conizaarrtex">
+			<h3 class="subtexarr">Hablemos de experiencias.</h3>
+			<p class="texarrhom" style="">¿Te interesa unirte a la comunidad colaborativa? Llena tus datos, unete a BiBi, mejora tus operaciones y entrega una experiencia unica a tus clientes!</p>
+			
+			<div class="conarrimg">
+			</div>
+			<button class="btnpas">Nuestra mision</button>
+		</div>
+	</div>
+	<div class="conintarrfor">
+		<div class="conderarrfor">
+			<h3 class="subtexarr">Contactanos</h3>
+			<form class="" method="post" id="contactForm" name="contactForm">
+				<div class="coninfarr1">
+					<div class="">
+						<input type="text" class="taginput" placeholder="Nombre">
+					</div>
+					<div class="">
+						<input type="text" class="taginput" placeholder="Celular o Email">
+					</div>
+				<div class="coninfarr2">
+					<div class="">
+						<input type="text" class="taginput"placeholder="Categoria de artículos">
+					</div>
+				</div>
+					<div class="">
+						<input type="text" class="taginput" placeholder="Nombre empresa">
+					</div>
+				<div class="coninfarr3">
+					<div class="">
+						<textarea class="taginput" cols="30" rows="7" placeholder="Describe tu empresa"></textarea>
+					</div>
+				</div>
+				<div class="conbtnarrsen">
+						<button class="btnpas" type="submit">Enviar</button>
+				</div>
+			</div>
+		</div>  
+  </div>
 </div>
 
 <%#Seccion6: Listas de categorias e ubicaciones%>

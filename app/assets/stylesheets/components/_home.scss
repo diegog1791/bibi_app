@@ -45,8 +45,9 @@
 
 .comp-title {
     text-align: center;
+    text-decoration: underline;
     margin-top: 50px;
-    height: 100px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -151,17 +152,17 @@
 .liscatubi {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #faee4e;
     padding: 40px 40px 40px 100px;
 }
 
 .liscu {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    text-align: center;
+    text-align: start;
     padding: 0;
 }
 
@@ -209,7 +210,6 @@
     .comp-title {
         text-align: center;
         margin-top: 50px;
-        height: 100px;
         width: 100%;
     }
     //Información BiBi pasos de como funciona
@@ -307,11 +307,11 @@
         padding: 40px 40px 40px 100px;
     }
     .liscu {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        text-align: center;
+        text-align: start;
         padding: 0;
     }
 }
@@ -360,7 +360,6 @@
     .comp-title {
         text-align: center;
         margin-top: 50px;
-        height: 100px;
         width: 100%;
     }
     //Información BiBi pasos de como funciona
@@ -459,10 +458,10 @@
         padding: 40px;
     }
     .liscu {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
         list-style-type: none;
         padding: 0;
     }
@@ -512,7 +511,6 @@
     .comp-title {
         text-align: center;
         margin-top: 50px;
-        height: 100px;
         width: 100%;
     }
     //Información BiBi pasos de como funciona
@@ -611,10 +609,10 @@
         padding: 50px;
     }
     .liscu {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
         list-style-type: none;
         padding: 0;
     }
@@ -663,7 +661,6 @@
     .comp-title {
         text-align: center;
         margin-top: 50px;
-        height: 100px;
         width: 100%;
     }
     //Información BiBi pasos de como funciona
@@ -760,7 +757,7 @@
         padding: 30px;
     }
     .liscu {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -813,7 +810,6 @@
     .comp-title {
         text-align: center;
         margin-top: 50px;
-        height: 100px;
         width: 100%;
     }
     //Información BiBi pasos de como funciona
