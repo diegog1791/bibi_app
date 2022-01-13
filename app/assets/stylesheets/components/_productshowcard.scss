@@ -1,0 +1,80 @@
+//Index card product
+.indcardprod {
+    width: 320px;
+    height: 370px;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//Top image product
+.indcardimg {
+    width: 300px;
+    height: 230px;
+}
+
+.timgprod {
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+//Card title product
+.ctitprod {
+    padding: 5px;
+}
+
+//Card product title font
+.cptfon {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+//Card owner information
+.cowninf {
+    display: flex;
+    margin-bottom: 5px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+//Card information product
+.cinfprod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cprostarev {
+    display: flex;
+    flex-direction: row;
+}
+
+//Card products stars
+.cprodstico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.cprodstav .cprorev {
+    margin: 0;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+//Card product price
+.cpropri {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    .cprifon {
+        font-size: 22px;
+    }
+}

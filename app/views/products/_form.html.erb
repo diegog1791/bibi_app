@@ -1,64 +1,96 @@
-<%= simple_form_for(product) do |f| %>
-<div class="fornew">
-  <div class="forimg">
-  
+<div class="connewart">
+  <div class="contitnew">
+    <h1>Nuevo artículo</h1>
   </div>
-  <div class="forinfogen">
-    <div class="titdes">
-      Titulo y descripcion
-      <%= f.input :title,
-                    label: 'Titulo del producto',
-                    required: true %>
-      <%= f.input :description,
-                    label: 'Descripción del producto',
-                    required: true %>              
-    </div>
-    <div class="infper">
-      Informacion perfil (Quien lo renta, estrellas perfil, ubicacion y cant articulos)
-    </div>
-    <div class="zonent">
-      Zonas de entregas
-    </div>
-    <div class="otrart">
-      Más artículos del perfil
-    </div>
-    <div class="revper">
-      Reviews del perfil
-    </div>
-
-    <div class="artrel">
-      Artículos relacionados 
-    </div>
+ 
+  <div class="conintnewart">
+    <%= simple_form_for(product, defaults: { input_html: { class: 'taginput' } }) do |f| %>
+         <div class="contitnew">
+          <h3>Formulario</h3>
+        </div>
+        <div class="conimgnew">
+          <div class="conintimg">
+            <%= f.input :photo,
+                        input_html: {class: "tagfotnew"},
+                        label: 'Imagenes',
+                        as: :file %>           
+          </div>
+        </div>
+                       
+        <div class="contitcatdesnew">
+          <div class="coninttitcatnew"> 
+            <div class="coninttitnew">
+              <%= f.input :title,
+                            label: 'Titulo',
+                            placeholder: "Maxímo 60 caracteres",
+                            maxlength: 60 ,
+                            required: true %>
+            </div>
+            <div class="conintcatnew">
+              <%= f.input :category,
+                          label: "Categoría",
+                          placeholder: "Electronicos",
+                          collection: %w{Drones Electrodomésticos Inflables Cámaras Construcción Mobiliario Ropa Transporte},
+                          required: true %>
+            </div>
+          </div>  
+          <div class="conintdesnew">
+            <%= f.input :description, 
+                          input_html: {class: "tagdesnew"},
+                          label: 'Descripción',
+                          placeholder:"Describe tu artículo",
+                          maxlength: 500 ,
+                          required: true %>
+          </div>           
+        </div>
+        <div class="conintposvalnew">
+          <div class="concodposnew">
+            <%= f.input :zip_code,
+                          label: 'Código postal',
+                          placeholder: "25070",
+                          required: true %>
+          </div>
+          <div class="convalart">
+            <%= f.input :product_value,
+                        label: 'Valor del artículo',
+                        placeholder: "$10,000",
+                        required: true %>
+          </div>
+        </div>
+        
+        <div class="contitprenew">
+          <h5>Precios de renta </h5><p>(MXN)</p>
+        </div>
+        <div class="conpreartnew">
+          <div class="coninpredianew">
+            <%= f.input :daily_price,
+                        label: 'Día',
+                        placeholder: "$1,000",
+                        required: true
+                        %>
+          </div>
+          <div class="conintpresemnew">
+            <%= f.input :weekly_price,
+                        label: 'Semana',
+                        placeholder: "$4,000",
+                        required: true 
+                        %>
+          </div>
+          <div class="conintpremesnew">
+            <%= f.input :monthly_price,
+                        label: 'Mes',
+                        placeholder: "$12,000",
+                        required: true %>
+          </div>
+          
+        </div>
+        <div class="contbtnsub">
+            <%= f.submit 'Agregar', class: "btnagrnew"%>
+            <%= f.submit 'Cancelar', class: "btncannew"%>
+          <% end %>
+        </div>
 
   </div>
-
-        <%= f.input :daily_price,
-                    label: 'Precio por dia',
-                    required: true
-                     %>
-        <%= f.input :weekly_price,
-                    label: 'Precio por semana',
-                    required: true 
-                    %>
-        <%= f.input :monthly_price,
-                    label: 'Precio por mes',
-                    required: true %>
-        <%= f.input :product_value,
-                    label: 'Valor del producto',
-                    required: true %>
-        <%= f.input :zip_code,
-                    label: 'Código postal',
-                    required: true %>
-        <%= f.input :category,
-                    label: "Categoría", 
-                    collection: %w{Drones Electrodomésticos Inflables Cámaras Construcción Mobiliario Ropa Transporte},
-                    required: true %>               
-        <%= f.input :photo,
-                    as: :file,
-                    class: "input-style",
-                    id: "upload" %>                     
-        <br>
-        <%= f.submit 'Agregar producto' %>
-      <% end %>
 </div>
+
   
