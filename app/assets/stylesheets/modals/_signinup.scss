@@ -88,18 +88,16 @@
     width: 100%;
 }
 
-.taginput {
+.taginput,
+.taginput:focus {
     border-radius: 5px;
     background-color: #eee;
     border: none;
     padding: 10px;
     margin: 5px 0;
     width: 100%;
+    height: min-content;
     font-size: 14px;
-}
-
-.taginput:focus {
-    box-shadow: yellowgreen;
 }
 
 .remmebtn {

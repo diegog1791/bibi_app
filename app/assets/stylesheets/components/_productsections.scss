@@ -1,0 +1,59 @@
+.indcateve {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.conindmen {
+    display: flex;
+    flex-wrap: row;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+}
+
+.indcatbtns {
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFF562;
+    text-align: center;
+}
+
+.catnamadd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    opacity: 50%;
+}
+
+.indlocsel {
+    margin-left: 20px;
+}
+
+.catselfon {
+    margin: 0;
+}
+
+.conindser {
+    display: flex;
+    flex-direction: row;
+}
+
+.indprodcarcon {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.conindmap {
+    width: 50%;
+    background-color: teal;
+}
+
+.indprodcarcon {
+    width: 50%;
+}

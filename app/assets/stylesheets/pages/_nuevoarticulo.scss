@@ -1,0 +1,973 @@
+.connewart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_900/v1641927645/bibi/HOME/Design_team-bro_dsxj0v.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.contitnew {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conintnewart {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 720px;
+    margin: 0 150px 100px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//Contenedor imagenes 
+.conimgnew {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+}
+
+.conintimg {
+    display: flex;
+    flex-direction: row;
+}
+
+//Seccion: Titulo, categoria y descripción
+.contitcatdesnew {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+//Titulo y categoria
+.coninttitcatnew {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.coninttitnew {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.conintcatnew {
+    width: 30%;
+}
+
+//Descripcion
+.conintdesnew {}
+
+//Contenedor codigo postal y valor real
+.conintposvalnew {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+//Codigo postal
+.concodposnew {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.convalart {
+    width: 25%;
+    margin-right: 10px
+}
+
+//Precios artículo
+.contitprenew {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.conpreartnew {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.coninpredianew {
+    width: 33%;
+    margin-right: 10px;
+}
+
+.conintpresemnew {
+    width: 33%;
+    margin-right: 10px;
+}
+
+.conintpremesnew {
+    width: 33%;
+}
+
+.contbtnsub {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+//Areas del texto
+.tagfotnew {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+}
+
+input[type=file]::file-selector-button {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    border-color: #eee;
+}
+
+.tagdesnew,
+.tagdesnew:focus {
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    height: 200px;
+}
+
+//Botones
+.btncannew {
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid #ED3660;
+    background-color: #ED3660;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btnagrnew {
+    border-radius: 5px;
+    border: 1px solid #FFF562;
+    background-color: #FFF562;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    width: 40%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btncannew:active,
+.btnagrnew:active {
+    transform: scale(0.95);
+}
+
+//Large devices Desktops (≥1440px)
+@media screen and (max-width: 1440px) {
+    .connewart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_600/v1641927645/bibi/HOME/Design_team-bro_dsxj0v.png");
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .contitnew {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .conintnewart {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        max-width: 720px;
+        margin: 0 80px 100px auto;
+        padding: 15px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    //Contenedor imagenes 
+    .conimgnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+    }
+    .conintimg {
+        display: flex;
+        flex-direction: row;
+    }
+    //Seccion: Titulo, categoria y descripción
+    .contitcatdesnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    //Titulo y categoria
+    .coninttitcatnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninttitnew {
+        width: 70%;
+        margin-right: 10px;
+    }
+    .conintcatnew {
+        width: 30%;
+    }
+    //Descripcion
+    .conintdesnew {}
+    //Contenedor codigo postal y valor real
+    .conintposvalnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    //Codigo postal
+    .concodposnew {
+        width: 25%;
+        margin-right: 10px;
+    }
+    .convalart {
+        width: 25%;
+        margin-right: 10px
+    }
+    //Precios artículo
+    .contitprenew {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .conpreartnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninpredianew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpresemnew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpremesnew {
+        width: 33%;
+    }
+    .contbtnsub {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    //Areas del texto
+    .tagfotnew {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+    }
+    input[type=file]::file-selector-button {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+        background-color: #eee;
+        border: none;
+        border-radius: 10px;
+        border-color: #eee;
+    }
+    .tagdesnew,
+    .tagdesnew:focus {
+        border-radius: 5px;
+        background-color: #eee;
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        height: 200px;
+    }
+    //Botones
+    .btncannew {
+        width: 40%;
+        border-radius: 5px;
+        border: 1px solid #ED3660;
+        background-color: #ED3660;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnagrnew {
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        width: 40%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btncannew:active,
+    .btnagrnew:active {
+        transform: scale(0.95);
+    }
+}
+
+//Medium devices Tablets/Desktops (≥992px)
+@media screen and (max-width: 992px) {
+    .connewart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        background-image: url("https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,w_400/v1641927645/bibi/HOME/Design_team-bro_dsxj0v.png");
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .contitnew {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .conintnewart {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        max-width: 720px;
+        margin: 0 50px 100px auto;
+        padding: 15px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    //Contenedor imagenes 
+    .conimgnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+    }
+    .conintimg {
+        display: flex;
+        flex-direction: row;
+    }
+    //Seccion: Titulo, categoria y descripción
+    .contitcatdesnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    //Titulo y categoria
+    .coninttitcatnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninttitnew {
+        width: 70%;
+        margin-right: 10px;
+    }
+    .conintcatnew {
+        width: 30%;
+    }
+    //Descripcion
+    .conintdesnew {}
+    //Contenedor codigo postal y valor real
+    .conintposvalnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    //Codigo postal
+    .concodposnew {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .convalart {
+        width: 50%;
+        margin-right: 0
+    }
+    //Precios artículo
+    .contitprenew {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .conpreartnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninpredianew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpresemnew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpremesnew {
+        width: 33%;
+    }
+    .contbtnsub {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    //Areas del texto
+    .tagfotnew {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+    }
+    input[type=file]::file-selector-button {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+        background-color: #eee;
+        border: none;
+        border-radius: 10px;
+        border-color: #eee;
+    }
+    .tagdesnew,
+    .tagdesnew:focus {
+        border-radius: 5px;
+        background-color: #eee;
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        height: 200px;
+    }
+    //Botones
+    .btncannew {
+        width: 40%;
+        border-radius: 5px;
+        border: 1px solid #ED3660;
+        background-color: #ED3660;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnagrnew {
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        width: 40%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btncannew:active,
+    .btnagrnew:active {
+        transform: scale(0.95);
+    }
+}
+
+//Medium devices Tablets (≥768px)
+@media screen and (max-width: 768px) {
+    .connewart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        background-image: none;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .contitnew {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .conintnewart {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 720px;
+        margin: 0 auto 50px auto;
+        padding: 15px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    //Contenedor imagenes 
+    .conimgnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+    }
+    .conintimg {
+        display: flex;
+        flex-direction: row;
+    }
+    //Seccion: Titulo, categoria y descripción
+    .contitcatdesnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    //Titulo y categoria
+    .coninttitcatnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninttitnew {
+        width: 70%;
+        margin-right: 10px;
+    }
+    .conintcatnew {
+        width: 30%;
+    }
+    //Descripcion
+    .conintdesnew {}
+    //Contenedor codigo postal y valor real
+    .conintposvalnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    //Codigo postal
+    .concodposnew {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .convalart {
+        width: 50%;
+        margin-right: 0
+    }
+    //Precios artículo
+    .contitprenew {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .conpreartnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninpredianew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpresemnew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpremesnew {
+        width: 33%;
+    }
+    .contbtnsub {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    //Areas del texto
+    .tagfotnew {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+    }
+    input[type=file]::file-selector-button {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+        background-color: #eee;
+        border: none;
+        border-radius: 10px;
+        border-color: #eee;
+    }
+    .tagdesnew,
+    .tagdesnew:focus {
+        border-radius: 5px;
+        background-color: #eee;
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        height: 200px;
+    }
+    //Botones
+    .btncannew {
+        width: 40%;
+        border-radius: 5px;
+        border: 1px solid #ED3660;
+        background-color: #ED3660;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnagrnew {
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        width: 40%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btncannew:active,
+    .btnagrnew:active {
+        transform: scale(0.95);
+    }
+}
+
+//Small devices Mobiles (≥640px)
+@media screen and (max-width: 640px) {
+    .connewart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        background-image: none;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .contitnew {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .conintnewart {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 720px;
+        margin: 0 auto 50px auto;
+        padding: 15px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    //Contenedor imagenes 
+    .conimgnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+    }
+    .conintimg {
+        display: flex;
+        flex-direction: row;
+    }
+    //Seccion: Titulo, categoria y descripción
+    .contitcatdesnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    //Titulo y categoria
+    .coninttitcatnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninttitnew {
+        width: 70%;
+        margin-right: 10px;
+    }
+    .conintcatnew {
+        width: 30%;
+    }
+    //Descripcion
+    .conintdesnew {}
+    //Contenedor codigo postal y valor real
+    .conintposvalnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    //Codigo postal
+    .concodposnew {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .convalart {
+        width: 50%;
+        margin-right: 0
+    }
+    //Precios artículo
+    .contitprenew {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .conpreartnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coninpredianew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpresemnew {
+        width: 33%;
+        margin-right: 10px;
+    }
+    .conintpremesnew {
+        width: 33%;
+    }
+    .contbtnsub {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    //Areas del texto
+    .tagfotnew {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+    }
+    input[type=file]::file-selector-button {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+        background-color: #eee;
+        border: none;
+        border-radius: 10px;
+        border-color: #eee;
+    }
+    .tagdesnew,
+    .tagdesnew:focus {
+        border-radius: 5px;
+        background-color: #eee;
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        height: 200px;
+    }
+    //Botones
+    .btncannew {
+        width: 40%;
+        border-radius: 5px;
+        border: 1px solid #ED3660;
+        background-color: #ED3660;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnagrnew {
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        width: 40%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btncannew:active,
+    .btnagrnew:active {
+        transform: scale(0.95);
+    }
+}
+
+//Extra Small devices Mobiles (≥480px)
+@media screen and (max-width: 480px) {
+    .connewart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        background-image: none;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .contitnew {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .conintnewart {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 720px;
+        margin: 0 auto 50px auto;
+        padding: 15px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    //Contenedor imagenes 
+    .conimgnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+    }
+    .conintimg {
+        display: flex;
+        flex-direction: row;
+    }
+    //Seccion: Titulo, categoria y descripción
+    .contitcatdesnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    //Titulo y categoria
+    .coninttitcatnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .coninttitnew {
+        width: 100%;
+        margin-right: 0;
+    }
+    .conintcatnew {
+        width: 100%;
+    }
+    //Descripcion
+    .conintdesnew {}
+    //Contenedor codigo postal y valor real
+    .conintposvalnew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    //Codigo postal
+    .concodposnew {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .convalart {
+        width: 50%;
+        margin-right: 0
+    }
+    //Precios artículo
+    .contitprenew {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .conpreartnew {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .coninpredianew {
+        width: 100%;
+        margin-right: 0;
+    }
+    .conintpresemnew {
+        width: 100%;
+        margin-right: 0;
+    }
+    .conintpremesnew {
+        width: 100%;
+    }
+    //Areas del texto
+    .tagfotnew {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    input[type=file]::file-selector-button {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+        background-color: #eee;
+        border: none;
+        border-radius: 10px;
+        border-color: #eee;
+    }
+    .tagdesnew,
+    .tagdesnew:focus {
+        border-radius: 5px;
+        background-color: #eee;
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        height: 200px;
+    }
+    //Botones
+    .contbtnsub {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .btncannew {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ED3660;
+        background-color: #ED3660;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btnagrnew {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #FFF562;
+        background-color: #FFF562;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        margin: 0 0 10px 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .btncannew:active,
+    .btnagrnew:active {
+        transform: scale(0.95);
+    }
+}

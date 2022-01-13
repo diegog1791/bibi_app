@@ -1,77 +1,86 @@
 <div class="indcateve"> <%#Index Categories & Events Container %>
-  <h1>Categorias</h1>
-  <h2>Carrousel</h2>
+  <h1>Artículos</h1>
 </div>
 
 
-<%#Do each category, clicking on it opens modal with sub categories and products.%>
+  <%#Do each category, clicking on it opens modal with sub categories and products.%>
 
-<div class="indcatevescont"> <%#Index Categories & Events Container %>
-
-  
-  <div class="indcatevesbtns"> <%#Index Categories & Events Buttons %>
-    <a href="">
-      <h4 class="catxevetit">Drones</h4> <%#Categoria or Event Title %>
-    </a> 
-  </div>
-  <div class="indcatevesbtns"> <%#Index Categories & Events Buttons %>
-    <a href="">
-      <h4 class="catxevetit">Camaras</h4> <%#Categoria or Event Title %>
-    </a>
-  </div>
-
- 
-</div>
-
-<div class="catnamadd"> <%#Category name & address %>
-  <div class="indcatsel">
-    <h5 class="catselfon">Departamento/SubCategoria/Articulo</h5>
-  </div>
-  <div class="indlocsel">
-    <h5 class="catselfon">Direccion seleccionada</h5>
-  </div>
-  <i class="fas fa-map-marker-alt"></i>
-</div>
-
-<%#Do each product card, clicking on it opens modal with product information.%>
-
-<div class="indprodcarcon"> <%#Index Products Card Container%>
-
-  <% @products.each do |product| %>
-<div class="indcardprod"> <%#Index Cards Products%>
-  <a href="" data-toggle="modal" data-target="#showModalScrollable">
-     <%#Top Image Products%>
-      <img class="timgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_230,w_280/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
-   
-    <div class="ctitprod"> <%#Card Title Products%>
-      <p class="cptfon"> <%#Card Product Title Font%>
-      <%= link_to "#{product.title}", product_path(product)%>
-      </p> 
+  <div class="conindmen"> <%#Index Categories & Events Container %>
+    <div class="indcatbtns"> <%#Index Categories & Events Buttons %>
+      <a href="">
+        <h4 class="catxevetit">Ubicación</h4> <%#Categoria or Event Title %>
+      </a> 
     </div>
-    <div class="cowninf"> <%#Card Info Owner%>
-      <div class="cinfprod"> <%#Card Info Product%>
-        <div class="cowl"> <%#Card Owner Level%>
-          <i class="fas fa-bolt fa-sm"></i>
-        </div>
-        <div class="cownam"> <%#Card Owner Name%>
-          <p> <%= "#{product.user.name} #{product.user.last_name}." %> </p>
-        </div>
-      </div>
-      <div class="cprostarev">
-        <div class="cprodstico"> <%#Card Product Stars Icons%>
-          <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
-        </div>
-        <div class="cprodstav"> <%#Card Products Stars Average%>
-          <p class="cprorev">(4.5)</p> <%#Card Product reviews%>
-        </div>
-      </div>
-    </div>
-      <div class="cpropri"><%#Card products Price%>
-        <p class="cprifon">
-          <%= "$ #{product.daily_price}" %>
-        </p><br><p class="cprifon">/día</p> <%#Card Price Font%>
-      </div>
-    </a>
+    <div class="indcatbtns"> <%#Index Categories & Events Buttons %>
+      <a href="">
+        <h4 class="catxevetit">Categorias</h4> <%#Categoria or Event Title %>
+      </a>
+    </div> 
+    <div class="indcatbtns"> <%#Index Categories & Events Buttons %>
+      <a href="">
+        <h4 class="catxevetit">Fecha</h4> <%#Categoria or Event Title %>
+      </a>
+    </div> 
   </div>
-  <% end %>
+
+  <div class="catnamadd"> <%#Category name & address %>
+    <div class="indcatsel">
+      <h5 class="catselfon">Categoria/SubCategoria/Articulo</h5>
+    </div>
+    <div class="indlocsel">
+      <h5 class="catselfon">Direccion seleccionada</h5>
+    </div>
+    <i class="fas fa-map-marker-alt" style="color:red; margin-left: 10px"></i>
+  </div>
+
+<div class="conindser">
+  <%#Do each product card, clicking on it opens modal with product information.%>
+
+  <div class="indprodcarcon"> <%#Index Products Card Container%>
+
+    <% @products.each do |product| %>
+  <div class="indcardprod"> <%#Index Cards Products%>
+    <a href="" data-toggle="modal" data-target="#showModalScrollable">
+      <%#Top Image Products%>
+      <div class="indcardimg">
+        <img class="timgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_230,w_280/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
+      </div>
+      <div class="ctitprod"> <%#Card Title Products%>
+        <p class="cptfon"> <%#Card Product Title Font%>
+        <%= link_to "#{product.title}", product_path(product)%>
+        </p> 
+      </div>
+      <div class="cowninf"> <%#Card Info Owner%>
+        <div class="cinfprod"> <%#Card Info Product%>
+          <div class="cowl"> <%#Card Owner Level%>
+            <i class="fas fa-bolt fa-sm"></i>
+          </div>
+          <div class="cownam"> <%#Card Owner Name%>
+            <p> <%= "#{product.user.name} #{product.user.last_name}." %> </p>
+          </div>
+        </div>
+        <div class="cprostarev">
+          <div class="cprodstico"> <%#Card Product Stars Icons%>
+            <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
+          </div>
+          <div class="cprodstav"> <%#Card Products Stars Average%>
+            <p class="cprorev">(4.5)</p> <%#Card Product reviews%>
+          </div>
+        </div>
+      </div>
+        <div class="cpropri"><%#Card products Price%>
+          <p class="cprifon">
+            <%= "$ #{product.daily_price}" %>
+          </p><br><p class="cprifon">/día</p> <%#Card Price Font%>
+        </div>
+      </a>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="conindmap">
+    <h1 style="text-align:center">MAPA</h1>
+  </div>
+
+
 </div>
