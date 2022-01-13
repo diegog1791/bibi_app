@@ -14,9 +14,10 @@ Rails.application.routes.draw do
   get 'arrendatario' => 'pages#arrendatario'
 
   # user profile
-  get 'dashboard' => 'profile#dashboard'
+  get 'dashboard' => 'profile#show'
   get 'perfil' => 'pages#perfil'
 
   # product routes
   resources :products
+
 end
