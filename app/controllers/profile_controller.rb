@@ -1,13 +1,4 @@
 class ProfileController < ApplicationController
-  def inbox
-  end
-
-  def articulos
-  end
-  
-  def solicitudes
-  end
-
-  def dashboard
+  def perfil
   end
 end
