@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  # pages routes
+  # Pages routes
   get 'acerca' => 'pages#acerca'
   get 'garantia' => 'pages#garantia'
   get 'aviso_de_privacidad' => 'pages#aviso_de_privacidad'
@@ -13,10 +13,12 @@ Rails.application.routes.draw do
   get 'arrendador' => 'pages#arrendador'
   get 'arrendatario' => 'pages#arrendatario'
 
-  # user profile
-  get 'dashboard' => 'profile#dashboard'
+  # Profile routes
   get 'perfil' => 'pages#perfil'
+  # get 'dashboard' => 'profile#dashboard'
+  
 
   # product routes
   resources :products
+  
 end

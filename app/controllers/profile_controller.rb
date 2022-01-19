@@ -1,4 +1,4 @@
 class ProfileController < ApplicationController
-  def dashboard
+  def perfil
   end
 end
