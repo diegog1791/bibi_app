@@ -43,12 +43,8 @@
 }
 
 .indprodcarcon {
-    width: 50%;
+    width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-}
-
-.indprodcarcon {
-    width: 50%;
+    grid-template-columns: repeat(4, 1fr);
 }

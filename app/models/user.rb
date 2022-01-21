@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :products
+  has_one_attached :profile_picture
 
   # validates :name, on: :create, message: "can't be blank"
 end
