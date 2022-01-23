@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2021_12_16_213922) do
 
   create_table "products", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.text "photos" 
-    t.text "title"  #Cambiar a string
+    t.text "photos"
+    t.text "title"
     t.integer "value"
     t.integer "daily_price"
     t.integer "weekly_price"

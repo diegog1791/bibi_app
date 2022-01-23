@@ -1,9 +1,6 @@
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showModalScrollable">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="showModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+
+<div class="modal fade" id="showModalScrollable" tabindex="-1" role="dialog" aria-labelledby="showModalScrollable" aria-hidden="true">
   <div class="shomodalcont modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -11,7 +8,7 @@
           <h2>Vive la experiencia</h2>
       </div>
         
-          <%= link_to 'x', products_path %>
+          <%= link_to 'X', products_path %>
      
       </div>
       <div class="modal-body">    
@@ -19,7 +16,11 @@
       <div class="modinfgen">
         <div class="modinffot"><%# <%= cl_image_tag @product.photo.key, height: 300, width: 400, crop: :fill %>  
           <div class="fotpri">
-            Foto principal (1)
+            <%#= if image_tag @product.photos.key.nill?, "class" => "mainphoto" %>
+              <img src="" alt="">
+              <%# else %>
+              <%#= image_tag @product.photos.key, "class" => "mainphoto" %>
+              <%# end %>
           </div>
           <div class="fotsec">
             <div class="fotsectod">

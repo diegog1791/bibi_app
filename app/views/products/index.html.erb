@@ -39,48 +39,53 @@
   <div class="indprodcarcon"> <%#Index Products Card Container%>
 
     <% @products.each do |product| %>
-  <div class="indcardprod"> <%#Index Cards Products%>
-    <a href="" data-toggle="modal" data-target="#showModalScrollable">
-      <%#Top Image Products%>
-      <div class="indcardimg">
-        <img class="timgprod" src="https://res.cloudinary.com/dfy5vakwb/image/upload/c_scale,h_230,w_280/v1633666923/bibi/Products.Pictures/drone_tdft5t.jpg" alt="">
-      </div>
-      <div class="ctitprod"> <%#Card Title Products%>
-        <p class="cptfon"> <%#Card Product Title Font%>
-        <%= link_to "#{product.title}", product_path(product)%>
-        </p> 
-      </div>
-      <div class="cowninf"> <%#Card Info Owner%>
-        <div class="cinfprod"> <%#Card Info Product%>
-          <div class="cowl"> <%#Card Owner Level%>
-            <i class="fas fa-bolt fa-sm"></i>
+    
+      <div class="indcardprod"> <%#Index Cards Products%>
+        <a href="" data-toggle="modal" data-target="#showModalScrollable">
+        <%#Top Image Products%>
+        <div class="indcardimg">
+          <%#= if @product.photos.nil?%> 
+            <%#= cl_image_tag("bibi/depositphotos_247872612-stock-illustration-no-image-available-icon-vector_jfx0sj.webp", :width=>199, :crop=>"scale")  %>
+            <%# else %>
+            <%#= image_tag (product.photos)  %>
+          <%# end %>
+        </div>
+        <div class="ctitprod"> <%#Card Title Products%>
+          <p class="cptfon"> <%#Card Product Title Font%>
+          <%= link_to "#{product.title}", product_path(product) , "data-toggle" => "modal", "data-target" => "#showModalScrollable" %>
+          </p> 
+        </div>
+        <div class="cowinfprodcon">
+          <div class="cowninf"> <%#Card Info Owner%>
+            <div class="cinfprod"> <%#Card Info Product%>
+              <div class="cowl"> <%#Card Owner Level%>
+                <i class="fas fa-bolt fa-sm"></i>
+              </div>
+              <div class="cownam"> <%#Card Owner Name%>
+                <p> <%= "#{product.user.name} #{product.user.last_name}." %> </p>
+              </div>
+            </div>
+            <div class="cprostarev">
+              <div class="cprodstico"> <%#Card Product Stars Icons%>
+                <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
+              </div>
+              <div class="cprodstav"> <%#Card Products Stars Average%>
+                <p class="cprorev">(4.5)</p> <%#Card Product reviews%>
+              </div>
+            </div>
           </div>
-          <div class="cownam"> <%#Card Owner Name%>
-            <p> <%= "#{product.user.name} #{product.user.last_name}." %> </p>
+            <div class="cpropri"><%#Card products Price%>
+              <p class="cprifon">
+                <%= "$ #{product.daily_price}" %>
+              </p><br><p class="cprifon">/día</p> <%#Card Price Font%>
+            </div>
           </div>
         </div>
-        <div class="cprostarev">
-          <div class="cprodstico"> <%#Card Product Stars Icons%>
-            <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i>
-          </div>
-          <div class="cprodstav"> <%#Card Products Stars Average%>
-            <p class="cprorev">(4.5)</p> <%#Card Product reviews%>
-          </div>
-        </div>
+         </a>
+          <% end %>
       </div>
-        <div class="cpropri"><%#Card products Price%>
-          <p class="cprifon">
-            <%= "$ #{product.daily_price}" %>
-          </p><br><p class="cprifon">/día</p> <%#Card Price Font%>
-        </div>
-      </a>
-    </div>
-    <% end %>
-  </div>
-
-  <div class="conindmap">
-    <h1 style="text-align:center">MAPA</h1>
-  </div>
+   
+ 
 
 
 </div>
