@@ -1,5 +1,339 @@
-<h1>Dashboard</h1>
-<h3>
-    <%= "Bienvenido #{current_user.name} #{current_user.last_name} #{current_user.mothers_last_name} "%>
-</h3>
-<%= link_to "Agregar productos", root_path %>
+<div class="condash">
+<div class="dashtit">
+  <h1>Dashboard</h1>
+</div>
+  <div class="conintdash">
+    <div class="condashtit">
+      <h3>General</h3>
+      <select name="" id="">
+        <option value="">Díario</option>
+        <option value="">Semanal</option>
+        <option value="">Mensual</option>
+        <option value="">Ingresar fechas</option>
+      </select>
+    </div>
+    
+    <div class="concardash">
+
+      <div class="cardash">
+        <div class="cardashico-ing">
+          $$$
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>$17,000.00</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Ingresos</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>52%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-ren">
+          No.
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>22</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Rentas</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>15%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-rm">
+          $
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>$772.72</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Ingreso promedio</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>70%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-car">
+         #
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>6</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Artículos</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>0%</p>
+        </div>
+      </div>
+
+    </div>
+
+<%#=Sección: Artículos%>
+    <div class="condashtit">
+        <h3>Artículos</h3>    
+    </div>
+    <div class="concardash">
+  
+      <div class="cardash">
+        <div class="cardashico-rev">
+          <i class="fas fa-bicycle fa-5x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>6</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Artículos</h4>
+          </div>
+        </div>
+        <div class="cardashrev">
+          <p>0%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-rev">
+          <i class="fas fa-box-open fa-5x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>3</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Categorías</h4>
+          </div>
+        </div>
+        <div class="cardashrev">
+          <p>0%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-rm">
+          No.
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>22</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Reviews</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>100%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-revart">
+          <i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>22</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Calif. Artículos</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>15%</p>
+        </div>
+      </div>
+
+    </div>
+  
+<%#=Sección: Solicitudes %>
+    <div class="condashtit">
+        <h3>Solicitudes</h3>    
+    </div>
+    <div class="concardash">
+  
+      <div class="cardash">
+        <div class="cardashico">
+          <i class="fas fa-calendar-check fa-4x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>30</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Total</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>22%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-car">
+          <i class="fas fa-check fa-3x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>22</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Aceptadas</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>73.33%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-car">
+          <i class="fas fa-times fa-3x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>8</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Rechazadas</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>27.77%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-car">
+          <i class="fas fa-comments fa-3x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>30</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Respuestas</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>100%</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  
+<%#=Sección: Reviews%>
+    <div class="condashtit">
+        <h3>Reviews</h3>    
+    </div>
+    <div class="concardash">
+  
+      <div class="cardash">
+        <div class="cardashico-niv">
+          <i class="fas fa-bolt fa-5x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>Super</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Nivel</h4>
+          </div>
+        </div>
+        <div class="cardashrev">
+          <h4>+52 Reviews</h4>
+
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-rev">
+          <i class="fas fa-star fa-4x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>4.5</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Calificación</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+         
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-rm">
+          No.
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>22</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Reviews</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>100%</p>
+        </div>
+      </div>
+
+      <div class="cardash">
+        <div class="cardashico-revart">
+          <i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i><i class="fas fa-star fa-1x"></i>
+        </div>
+        <div class="coningtex">
+          <div class="cardashing">
+            <h3>22</h3>
+          </div>
+          <div class="cardashtex">
+            <h4>Calif. Artículos</h4>
+          </div>
+        </div>
+        <div class="cardashpor">
+          <p>15%</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="condashtit">
+        <h3>Grafícas</h3>    
+    </div>
+    <div class="concardashgra">
+      <div class="cardashgra">
+        PIE CHART / INCOME / BAR CHART
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+
+
+
+
+
