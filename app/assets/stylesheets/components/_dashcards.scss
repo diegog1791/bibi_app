@@ -12,9 +12,24 @@
 .conintdash {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 10px auto;
+    max-width: 1290px;
+    margin: 10px;
 }
+
+.bigbigcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.bigcon1 {
+    width: 50%;
+}
+
+.bigcon2 {
+    width: 50%;
+}
+
+.concardashbig {}
 
 .condashtit {
     display: flex;
@@ -28,24 +43,51 @@
 
 .concardash {
     display: grid;
-    justify-content: start;
+    justify-content: space-around;
     justify-items: start;
-    width: 90%;
+    width: 100%;
     height: min-content;
     margin: 15px 0;
-    grid-template-columns: repeat(auto-fit, minmax(250px, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(190px, min-content));
 }
 
 .cardash {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px;
+    width: 190px;
     height: 240px;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     text-align: center;
     align-items: center;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardash2 {
+    width: 190px;
+    height: 240px;
+    margin: 10px;
+}
+
+.cardashint1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 48%;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardashint2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 48%;
+    text-align: center;
     background-color: #F5F5F5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -59,14 +101,26 @@
 
 .cardashgra {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     width: 100%;
     height: 500px;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
-    background-color: white;
+    background-color: #F5F5F5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dashgrafizq {
+    width: 70%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: azure;
+}
+
+.dashgrafder {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(250, 250, 184);
 }
 
 // GENERAL ICONS DESIGN
@@ -148,11 +202,13 @@
 //General text for cards
 .dashinfcantex {}
 
-.cardashtex {
+.cardashtittex {
     color: #aaa9a9;
+    font-size: 18px;
+    font-weight: 800;
 }
 
-.cardashpor {
+.cardashportex {
     color: green;
     opacity: .5;
 }
