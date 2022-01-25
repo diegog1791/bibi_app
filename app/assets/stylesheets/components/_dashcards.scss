@@ -1,120 +1,162 @@
-.dashcon {
+.condash {
     width: 100%;
-    height: 2000px;
+    height: fit-content;
+    background-color: white;
 }
 
-.dashintcon {
+.dashtit {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.conintdash {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 90%;
-    margin: 40px auto;
+    margin: 10px auto;
+}
+
+.condashtit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
 }
 
 .congangentit {
     text-align: start;
 }
 
-.congangen {
+.concardash {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
+    justify-content: start;
+    justify-items: start;
+    width: 90%;
     height: min-content;
+    margin: 15px 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, min-content));
 }
 
-.concarddash {
+.cardash {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 250px;
     height: 240px;
-    margin: 10px;
+    margin: 20px;
     padding: 20px;
     text-align: center;
     align-items: center;
-    border-radius: 10px;
+    background-color: #F5F5F5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-//General icons design
-.dashcaricon-gan {
+.concardashgra {
     display: flex;
-    width: 60px;
-    height: 60px;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.cardashgra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// GENERAL ICONS DESIGN
+// Ingresos
+.cardashico-ing {
+    display: flex;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    padding: auto;
-    border-radius: 50%;
+    margin-bottom: 20px;
     background-color: #98ED82;
     opacity: 0.8;
+    border-radius: 50%;
 }
 
-.dashcaricon-ren {
+// No. rentas
+.cardashico-ren {
     display: flex;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    padding: auto;
-    border-radius: 50%;
+    margin-bottom: 20px;
     background: rgba(255, 239, 0, 0.4);
     opacity: 0.8;
+    border-radius: 50%;
 }
 
-.dashcaricon-rm {
+// Rentas promedio
+.cardashico-rm {
     display: flex;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    padding: auto;
-    border-radius: 50%;
+    margin-bottom: 20px;
     background-color: #EFEFEF;
     opacity: 0.8;
+    border-radius: 50%;
 }
 
-.dashcaricon-car {
+// Cantidad artículos
+.cardashico-car {
     display: flex;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
-    padding: auto;
-    border-radius: 50%;
+    margin-bottom: 20px;
     background-color: rgb(59, 59, 59);
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+// REVIEWS ICONS DESIGNS
+// Nivel usuario
+.cardashico-niv {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     opacity: 0.8;
 }
 
-.dashcargancan {
-    margin-bottom: 5px;
+//Calificación usuario
+.cardashico-rev {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0.8;
 }
-
-.dashcartit {}
-
-.dashcarpor {}
-
-//General icons design
-.dashcaricon-gan {}
-
-.dashcaricon-ren {}
-
-.dashcaricon-rm {}
-
-.dashcaricon-car {}
 
 //General text for cards
 .dashinfcantex {}
 
-.dashinftittex {
-    color: lightgrey;
+.cardashtex {
+    color: #aaa9a9;
 }
 
-.dashinfportex {
+.cardashpor {
     color: green;
     opacity: .5;
+}
+
+.cardashrev {
+    color: black;
 }
