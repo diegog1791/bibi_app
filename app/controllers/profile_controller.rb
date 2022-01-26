@@ -20,6 +20,13 @@ class ProfileController < ApplicationController
 
   def dashboard; end
 
+  def articulos; end
+
+  def solicitudes;  end
+
+  def inbox; end
+  
+
   private
 
   ########### Pefil Methods ###########

@@ -16,10 +16,10 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <%= link_to 'Agregar artículo', new_product_path %>
               <%= link_to "Perfil", perfil_path, class: "dropdown-item" %>
-              <%= link_to "Inbox", "#", class: "dropdown-item" %>
-              <%= link_to "Artículos", "#", class: "dropdown-item" %>
-              <%= link_to "Solicitudes", "#", class: "dropdown-item" %>
-              <%= link_to "Dashboard", "dashboard", class: "dropdown-item" %>
+              <%= link_to "Inbox", inbox_path, class: "dropdown-item" %>
+              <%= link_to "Artículos", articulos_path, class: "dropdown-item" %>
+              <%= link_to "Solicitudes", solicitudes_path, class: "dropdown-item" %>
+              <%= link_to "Dashboard", dashboard_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item"  %>
             </div>
           </li>
