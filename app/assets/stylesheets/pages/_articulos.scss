@@ -1,0 +1,100 @@
+.conproart {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+    background-color: white;
+    .porarttit {
+        text-align: center;
+        margin: 30px 0;
+    }
+    .proartint {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .proartsea {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .seaartcon {
+        display: flex;
+        width: 410px;
+        border-radius: 25px;
+        background-color: #F5F5F5;
+    }
+    .seartback {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5px;
+        border-radius: 25px;
+        width: 400px;
+    }
+}
+
+// Input search articulo
+.searchart,
+.searchart:active,
+.focus-visible-only:focus-visible {
+    width: 400px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+.sorcatart {
+    margin: 10px;
+}
+
+// Contenedor tabla articulos
+.contabart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    .tabart {
+        border-collapse: collapse;
+        margin: 25px 0;
+    }
+    .tabart thead {
+        text-align: left;
+    }
+    .tabart td {
+        height: 100px;
+        padding: 3px;
+        text-transform: uppercase;
+        background-color: #FFF562;
+    }
+    .tabcatrow {
+        width: 250px;
+    }
+    .tabedirow {
+        width: 100px;
+    }
+    .tabestrow {
+        width: 100px;
+    }
+}
+
+// Botones
+.btnagrart {
+    align-self: center;
+    border-radius: 5px;
+    background-color: #FFF562;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: transform 80ms ease-in;
+    width: fit-content;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// Texto titulos
+.tittexart {
+    font-size: 18px;
+    font-weight: 800;
+}

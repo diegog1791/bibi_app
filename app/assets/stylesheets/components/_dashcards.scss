@@ -1,6 +1,7 @@
 .condash {
     width: 100%;
     height: fit-content;
+    margin-bottom: 30px;
     background-color: white;
 }
 
@@ -12,8 +13,10 @@
 .conintdash {
     display: flex;
     flex-direction: column;
+
     max-width: 1290px;
     margin: 10px;
+
 }
 
 .bigbigcon {

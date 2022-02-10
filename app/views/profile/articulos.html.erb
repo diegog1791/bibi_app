@@ -1,0 +1,57 @@
+<div class="conproart">
+  <div class="porarttit">
+    <h1>Artículos</h1>
+  </div>
+  <div class="proartint">
+    <div class="proartsea">
+      <div class="seaartcon">
+        <div class="seartback">
+          <input class="searchart" type="text" placeholder="Buscar artículo...">
+          <button class="sbtn"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="sorcatart">
+        <select name="Categoría" id="" placeholder="Categoría">
+          <option value="">Fotografía y video</option>
+          <option value="">Sonido</option>
+          <option value="">Proyectores & pantallas</option>
+          <option value="">Drones</option>
+        </select>
+      </div>
+      <%= link_to 'Agregar artículo', new_product_path, 'class' => 'btnagrart' %>
+    </div>
+
+    <div class="contabart">
+      <table class="tabart">
+        <thead>
+          <tr>
+            <th class="tabcatrow">Categoría</th>
+            <th class="tabsubrow">Sub-Categoría</th>
+            <th class="tabartrow">Artículo</th>
+            <th class="tabingrow">Registro</th>
+            <th class="taburerow">Ult. Renta</th>
+            <th class="tabnrerow">No. Rentas</th>
+            <th class="tabnrevrow">No. Reviews</th>
+            <th class="tabrcalrow">Calificación</th>
+            <th class="tabestrow">Estatus</th>
+            <th class="tabedirow">Editar</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td data-column="Categoria">Drones</td>
+              <td data-column="Sub-Categoria">DJI</td>
+              <td data-column="Artículo">DJI Mavic pro 2018</td>
+              <td data-column="Registro">01/ene/21/</td>
+              <td data-column="Ultima renta">04/ene/22</td>
+              <td data-column="Rentas">17</td>
+              <td data-column="No. Reviews">13</td>
+              <td data-column="Calificacion">4.1</td>
+              <td data-column="Estatus">Inventario,Rentado,Solicitado</td>
+              <td data-column="Editar">---</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
