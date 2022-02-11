@@ -1,4 +1,100 @@
 .navbar {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 80px;
+  background-color: #fff562;
+}
+
+.logsba {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+.hlogobtn {
+  width: max-content;
+  height: max-content;
+}
+
+.sback {
+  display: flex;
+  background-color: #fefefe;
+  border-radius: 25px;
+  width: 800px;
+  height: max-content;
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.form-control {
+  background-color: #fefefe;
+  border-radius: 25px;
+  border: transparent;
+  width: 100%;
+}
+
+.form-control:focus {
+  background-color: white;
+}
+
+.sbtn {
+  width: max-content;
+  background-color: transparent;
+  border: transparent;
+  color: black;
+  padding: 0 10px 0 5px;
+}
+
+.fas .fa-search {
+  color: black;
+}
+
+.mentog {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  margin-left: 30px;
+  flex-grow: 2;
+}
+
+.avabtn {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  z-index: 3;
+  background: #fff562;
+  right: 0;
+  opacity: 0.9;
+  border: none;
+  border-radius: 25px 0px 25px 25px;
+}
+
+.dropdown-item:hover {
+  display: block;
+  width: 100%;
+  padding: 0.25 rem 1 rem;
+  clear: both;
+  font-weight: 400;
+  color: black;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+//Medium devices Desktops (≥992px)
+@media screen and (max-width: 992px) {
+  .navbar {
     display: flex;
     flex-direction: row;
     position: sticky;
@@ -6,340 +102,239 @@
     z-index: 5;
     width: 100%;
     height: 80px;
-    background-color: #FFF562;
-}
-
-.logsba {
+  }
+  .logsba {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    align-items: center;
-}
-
-.hlogobtn {
-    width: max-content;
-    height: max-content;
-}
-
-.sback {
+    justify-content: center;
+    flex-grow: 2;
+  }
+  .hlogobtn {
+    width: 70px;
+    height: 70px;
+  }
+  .sback {
     display: flex;
     background-color: #fefefe;
     border-radius: 25px;
-    width: 800px;
+    width: 450px;
     height: max-content;
     margin-left: 30px;
-    flex-grow: 1;
-}
-
-.form-control {
+  }
+  .form-control {
     background-color: #fefefe;
     border-radius: 25px;
     border: transparent;
     width: 100%;
-}
-
-.form-control:focus {
-    background-color: white;
-}
-
-.sbtn {
+  }
+  .sbtn {
     width: max-content;
     background-color: transparent;
     border: transparent;
     color: black;
     padding: 0 10px 0 5px;
-}
-
-.fas .fa-search {
+  }
+  .fas .fa-search {
     color: black;
-}
-
-.mentog {
+  }
+  .mentog {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 20px;
     margin-left: 30px;
     flex-grow: 2;
-}
-
-.avatar {
+  }
+  .avatar {
     width: 45px;
     height: 40px;
-}
-
-.avabtn {
+  }
+  .avamen {
     background-color: transparent;
     border: none;
-}
-
-.navbar-nav .dropdown-menu {
-    position: absolute;
-    z-index: 3;
-    background: #FFF562;
-    right: 0;
-    opacity: 0.9;
-    border: none;
-    border-radius: 25px 0px 25px 25px
-}
-
-.dropdown-item:hover {
-    display: block;
-    width: 100%;
-    padding: 0.25 rem 1 rem;
-    clear: both;
-    font-weight: 400;
-    color: black;
-    text-align: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-}
-
-//Medium devices Desktops (≥992px)
-@media screen and (max-width: 992px) {
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-        width: 100%;
-        height: 80px;
-    }
-    .logsba {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-grow: 2;
-    }
-    .hlogobtn {
-        width: 70px;
-        height: 70px;
-    }
-    .sback {
-        display: flex;
-        background-color: #fefefe;
-        border-radius: 25px;
-        width: 450px;
-        height: max-content;
-        margin-left: 30px;
-    }
-    .form-control {
-        background-color: #fefefe;
-        border-radius: 25px;
-        border: transparent;
-        width: 100%;
-    }
-    .sbtn {
-        width: max-content;
-        background-color: transparent;
-        border: transparent;
-        color: black;
-        padding: 0 10px 0 5px;
-    }
-    .fas .fa-search {
-        color: black;
-    }
-    .mentog {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding-right: 20px;
-        margin-left: 30px;
-        flex-grow: 2;
-    }
-    .avatar {
-        width: 45px;
-        height: 40px;
-    }
-    .avamen {
-        background-color: transparent;
-        border: none;
-    }
+  }
 }
 
 //Small devices Tablets (≥768px)
 @media screen and (max-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-        width: 100%;
-    }
-    .logsba {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 400px;
-    }
-    .hlogobtn {
-        width: 60px;
-        height: 60px;
-    }
-    .sback {
-        background-color: #fefefe;
-        border-radius: 25px;
-        width: 100px;
-        height: max-content;
-        margin-left: 10px;
-    }
-    .form-control {
-        background-color: #fefefe;
-        border-radius: 25px;
-        border: transparent;
-        width: 100%;
-    }
-    .sbtn {
-        width: max-content;
-        background-color: transparent;
-        border: transparent;
-        color: black;
-    }
-    .fas .fa-search {
-        color: black;
-    }
-    .mentog {
-        justify-content: end;
-        flex-grow: 2;
-        padding-right: 5px;
-    }
-    .avatar {
-        width: 45px;
-        height: 40px;
-        margin-right: 10px;
-    }
-    .avamen {
-        background-color: transparent;
-        border: none;
-    }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+  }
+  .logsba {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+  }
+  .hlogobtn {
+    width: 60px;
+    height: 60px;
+  }
+  .sback {
+    background-color: #fefefe;
+    border-radius: 25px;
+    width: 100px;
+    height: max-content;
+    margin-left: 10px;
+  }
+  .form-control {
+    background-color: #fefefe;
+    border-radius: 25px;
+    border: transparent;
+    width: 100%;
+  }
+  .sbtn {
+    width: max-content;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+  }
+  .fas .fa-search {
+    color: black;
+  }
+  .mentog {
+    justify-content: end;
+    flex-grow: 2;
+    padding-right: 5px;
+  }
+  .avatar {
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .avamen {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 //Small devices Tablets (≥640px)
 @media screen and (max-width: 640px) {
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-        width: 100%;
-    }
-    .navbar.scroll {
-        background-color: black;
-    }
-    .logsba {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-grow: 2;
-    }
-    .hlogobtn {
-        width: 50px;
-        height: 50px;
-    }
-    .sback {
-        display: flex;
-        background-color: #fefefe;
-        border-radius: 25px;
-        width: max-content;
-        height: max-content;
-        margin-left: 30px;
-    }
-    .form-control {
-        background-color: #fefefe;
-        border-radius: 25px;
-        border: transparent;
-        width: 100%;
-    }
-    .sbtn {
-        width: max-content;
-        background-color: transparent;
-        border: transparent;
-        color: black;
-    }
-    .fas .fa-search {
-        color: black;
-    }
-    .mentog {
-        justify-content: end;
-        flex-grow: 2;
-        padding-right: 5px;
-    }
-    .avatar {
-        width: 45px;
-        height: 40px;
-    }
-    .avamen {
-        background-color: transparent;
-        border: none;
-    }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+  }
+  .navbar.scroll {
+    background-color: black;
+  }
+  .logsba {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 2;
+  }
+  .hlogobtn {
+    width: 50px;
+    height: 50px;
+  }
+  .sback {
+    display: flex;
+    background-color: #fefefe;
+    border-radius: 25px;
+    width: max-content;
+    height: max-content;
+    margin-left: 30px;
+  }
+  .form-control {
+    background-color: #fefefe;
+    border-radius: 25px;
+    border: transparent;
+    width: 100%;
+  }
+  .sbtn {
+    width: max-content;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+  }
+  .fas .fa-search {
+    color: black;
+  }
+  .mentog {
+    justify-content: end;
+    flex-grow: 2;
+    padding-right: 5px;
+  }
+  .avatar {
+    width: 45px;
+    height: 40px;
+  }
+  .avamen {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 //Small devices Tablets (≥480px)
 @media screen and (max-width: 480px) {
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-        width: 100%;
-    }
-    .navbar.scroll {
-        background-color: black;
-    }
-    .logsba {
-        display: flex;
-        flex-direction: row;
-        width: 60px;
-        height: 60px;
-        align-items: center;
-        flex-grow: 10;
-    }
-    .hlogobtn {
-        width: 50px;
-        height: 50px;
-    }
-    .sback {
-        display: flex;
-        background-color: #fefefe;
-        border-radius: 25px;
-        width: 800px;
-        height: max-content;
-        margin: 0;
-        flex-grow: 1;
-    }
-    .form-control {
-        background-color: #fefefe;
-        border-radius: 25px;
-        border: transparent;
-        width: 100%;
-    }
-    .sbtn {
-        width: max-content;
-        background-color: transparent;
-        border: transparent;
-        color: black;
-        padding: 0 10px 0 5px;
-    }
-    .fas .fa-search {
-        color: black;
-    }
-    .mentog {
-        height: 60px;
-        align-items: center;
-        flex-grow: 1;
-    }
-    .avatar {
-        width: 45px;
-        height: 40px;
-    }
-    .avamen {
-        background-color: transparent;
-        border: none;
-    }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+  }
+  .navbar.scroll {
+    background-color: black;
+  }
+  .logsba {
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    flex-grow: 10;
+  }
+  .hlogobtn {
+    width: 50px;
+    height: 50px;
+  }
+  .sback {
+    display: flex;
+    background-color: #fefefe;
+    border-radius: 25px;
+    width: 800px;
+    height: max-content;
+    margin: 0;
+    flex-grow: 1;
+  }
+  .form-control {
+    background-color: #fefefe;
+    border-radius: 25px;
+    border: transparent;
+    width: 100%;
+  }
+  .sbtn {
+    width: max-content;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    padding: 0 10px 0 5px;
+  }
+  .fas .fa-search {
+    color: black;
+  }
+  .mentog {
+    height: 60px;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .avatar {
+    width: 45px;
+    height: 40px;
+  }
+  .avamen {
+    background-color: transparent;
+    border: none;
+  }
 }
